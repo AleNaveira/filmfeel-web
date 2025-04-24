@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FilmFeel</title>
+
+    <div th:insert="fragments/_resources :: _head_resources"></div>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+
+</head>
+<body>
+
+<nav th:replace="fragments/_fragments :: nav_bar"></nav>
+
+<div class="form new-film-form">
+
+    <form action="" method="post" th:object="${film}" enctype="multipart/form-data">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
+        <div class="mb-3">
+            <label for="title" class="form-label">Titulo</label>
+            <input id="title" type="text" placeholder="Título" class="form-control"
+                   th:field="*{title}">
+
+            <div class="invalid-feedback"
+                 th:if="${#fields.hasErrors('title')}"
+                 th:errors="*{title}"></div>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="year" class="form-label">Año </label>
+            <input id="year" type="number" class="form-control"
+                   th:field="*{year}" min="1910" max="2024" placeholder="Año de estreno">
+
+            <div class="invalid-feedback"
+                 th:if="${#fields.hasErrors('year')}"
+                 th:errors="*{year}"></div>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="duration" class="form-label">Duración</label>
+            <input id="duration" type="number" class="form-control"
+                   th:field="*{duration}" min="20" max="800" placeholder="Duración de la película">
+
+            <div class="invalid-feedback"
+                 th:if="${#fields.hasErrors('duration')}"
+                 th:errors="*{duration}"></div>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="synopsis" class="form-label">Sinopsis</label>
+            <textarea id="synopsis" placeholder="Sinopsis" class="form-control" maxlength="1000"
+                      th:field="*{synopsis}"> </textarea>
+
+            <div class="invalid-feedback"
+                 th:if="${#fields.hasErrors('synopsis')}"
+                 th:errors="*{synopsis}"></div>
+
+        </div>
+
+        <div class="mb-3">
+            <label for="portada" class="form-label">Portada</label>
+            <input id="portada" name="portada" type="file" class="form-control">
+
+            <div class="invalid-feedback"
+                 th:if="${#fields.hasErrors('portada')}"
+                 th:errors="*{portada}"></div>
+
+
+        </div>
+
+        <div class="mb-3">
+            <label for="actors" class="form-label">Actores</label>
+            <select class="form-control select2" id="actors" th:field="*{actors}" multiple>
+                <option th:each="actor : ${actors}" th:value="${actor.id}"
+                        th:text="${actor.name} + ' ' + ${actor.surname}"></option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="director" class="form-label">Director</label>
+            <select class="form-control select2" id="director" th:field="*{directors} " multiple>
+                <option th:each="director : ${directors}" th:value="${director.id}"
+                        th:text="${director.name}+ ' ' + ${director.surname}"></option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="musicians" class="form-label">Músicos</label>
+            <select class="form-control select2" id="musicians" th:field="*{filmsMusicians}" multiple>
+                <option th:each="musician : ${musicians}" th:value="${musician.id}"
+                        th:text="${musician.name} + ' ' + ${musician.surname}"></option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="scriptwriters" class="form-label">Guionistas</label>
+            <select class="form-control select2" id="scriptwriters" th:field="*{scriptwriters}" multiple>
+                <option th:each="scriptwriter : ${scriptwriters}" th:value="${scriptwriter.id}"
+                        th:text="${scriptwriter.name} + ' ' + ${scriptwriter.surname}"></option>
+            </select>
+        </div>
+        <div class="mb-3">
+            <label for="photographer" class="form-label">Fotógrafo</label>
+            <select class="form-control select2" id="photographer" th:field="*{photographer} " multiple>
+                <option th:each="photographer : ${photographers}" th:value="${photographer.id}"
+                        th:text="${photographer.name}+ ' ' + ${photographer.surname}"></option>
+            </select>
+        </div>
+
+
+        <button type="submit" class="btn btn-success">Guardar</button>
+
+    </form>
+
+
+</div>
+
+
+<div layout:fragment="content" class="container my-5">
+</div>
+
+<div th:insert="fragments/_resources :: _foot_resources"></div>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2();
+    });
+
+</script>
+
+<div layout:fragment="scripts" th:remove="tag"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simulación del estado de sesión. Cambia esto según tu lógica de autenticación.
+        var userLoggedIn = true; // Cambia a false para simular usuario desconectado.
+
+        if (userLoggedIn) {
+            document.getElementById("userLoggedIn").style.display = "inline";
+            document.getElementById("userLoggedOut").style.display = "none";
+        } else {
+            document.getElementById("userLoggedIn").style.display = "none";
+            document.getElementById("userLoggedOut").style.display = "inline";
+        }
+    });
+</script>
+<footer th:replace="fragments/_fragments :: _footer"></footer>
+</body>
+</html>
+

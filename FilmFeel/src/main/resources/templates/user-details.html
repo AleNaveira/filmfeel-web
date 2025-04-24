@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <meta charset="UTF-8">
+    <title th:inline="text">Detalles de [[${user.username}]] - FilmFeel</title>
+    <div th:insert="fragments/_resources :: _head_resources"></div>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+</head>
+<body class="user-details-body">
+
+<nav th:replace="fragments/_fragments :: nav_bar"></nav>
+
+<div class="container user-container mt-5 p-4 rounded shadow-sm" th:object="${user}">
+    <div class="row justify-content-center align-items-center">
+
+        <div class="col-lg-4 col-md-6 col-sm-8 mb-4">
+            <div class="card user-card shadow-sm">
+
+                <img th:src="${user.image != null and user.image != ''} ? @{/assets/{filename}(filename=${user.image})} : @{/images/smile.png}"
+                     class="card-img-top user-image" th:alt="${user.username}"/>
+
+            </div>
+        </div>
+
+        <div class="col-lg-6 col-md-8 col-sm-10 text-center text-md-start">
+            <div class="user-details">
+                <h2 class="display-5 user-name" th:text="${user.name + ' ' + user.surname} + ' (Administrador)'"></h2>
+                <p><strong>Nombre de Usuario:</strong> <span th:text="${user.username}"></span></p>
+                <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
+                <p><strong>Fecha de Nacimiento:</strong> <span
+                        th:text="${#temporals.format(user.birthDate, 'dd/MM/yyyy')}"></span></p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row mt-5">
+        <div class="col text-center user-actions-container">
+            <h3 class="user-actions-title">Acciones del Usuario</h3>
+            <div class="d-flex justify-content-center gap-3 mt-3">
+                <form th:action="@{/usuario/eliminar/{id}(id=${user.id})}" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-danger px-4 py-2 shadow-sm">Eliminar Usuario</button>
+                </form>
+
+
+                <a sec:authorize="hasRole('ADMIN')"
+                   th:href="@{/admin/create}"
+                   class="btn btn-primary px-4 py-2 shadow-sm">
+                    Crear nuevo Admin
+                </a>
+
+                <form th:action="@{/logout}" method="post" class="d-inline">
+                    <button type="submit" class="btn btn-warning px-4 py-2 shadow-sm">Cerrar sesión</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer th:replace="fragments/_fragments :: _footer" class="user-footer-style py-4 mt-5 text-center"></footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

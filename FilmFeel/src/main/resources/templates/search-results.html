@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultados de Búsqueda | FilmFeel</title>
+    <div th:insert="fragments/_resources :: _head_resources"></div>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" type="text/css" th:href="@{/font_styles.css}">
+    <link rel="stylesheet" th:href="@{/styles.css}">
+
+</head>
+<body>
+
+<nav th:replace="fragments/_fragments :: nav_bar"></nav>
+
+<div class="container mt-4">
+    <h2>Resultados de Búsqueda: "<span th:text="${query}"></span>"</h2>
+
+    <div th:if="${#lists.isEmpty(films)}">
+        <p>No se encontraron películas que coincidan con tu búsqueda.</p>
+    </div>
+
+    <div th:if="${!#lists.isEmpty(films)}">
+        <table class="table table-hover">
+            <thead>
+            <tr>
+                <th></th>
+                <th>Película</th>
+                <th>Fecha de Estreno</th>
+                <th>Acciones</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="film : ${films}">
+                <td style="width: 100px;">
+                    <a th:href="@{/assets/{filename}(filename=*{film.posterRoute})}" data-fancybox>
+                        <img th:src="@{/assets/{filename}(filename=*{film.posterRoute})}"
+                             alt="uphs! no se encuentra la foto" class="img-fluid">
+                    </a>
+                </td>
+                <td>
+                    <div th:text="*{film.title}" class="fs-5 fw-bold"></div>
+                    <p th:text="*{synopsis}"></p>
+                    <div>
+                        <h6>Reparto y equipo técnico</h6>
+                        <span class="badge rounded-pill bg-warning text-dark me-1"
+
+                              th:text="*{film.title}"></span>
+                        <p class="badge rounded-pill bg-warning text-dark me-1"
+                           th:text="*{film.duration} + ' minutos.'"></p>
+
+                    </div>
+                </td>
+                <td>
+                    <a th:href="@{/peliculas/{id}(id=${film.id})}" class="btn btn-primary">Ver detalles</a>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+
+</div>
+
+</div>
+
+
+</body>
+</html>
+

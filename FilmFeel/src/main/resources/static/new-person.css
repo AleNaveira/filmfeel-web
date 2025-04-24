@@ -1,0 +1,56 @@
+ .label-newperson{
+
+         font-size: 2em;
+
+
+         }
+
+.form-person .form-label {
+     color: #527a49;
+     font-size: 1.5em;
+     font-weight: bold;
+ }
+
+  .form-person .form-control {
+      color: #527a49;
+      font-size: 1em;
+      border: 1px solid #527a49;
+       max-width: 800px;
+          width: 100%;
+          margin: 0 auto;
+  }
+
+
+   .form-person .btn {
+       padding: 12px 24px;
+       font-size: 1.1em;
+       color: #fff;
+   }
+
+    .form-person .btn-success {
+        background-color: #527a49;
+        border-color: #527a49;
+    }
+    .form-person .btn-success:hover {
+        background-color: #6b8c5d;
+    }
+ .form-person .btn-warning {
+     background-color: #f0ad4e;
+     border-color: #eea236;
+     color: #fff;
+ }
+
+  .form-person .btn-info {
+      background-color: #5bc0de;
+      border-color: #46b8da;
+      color: #fff;
+  }
+
+  .form-person .btn-warning:hover {
+      background-color: #ec971f;
+  }
+
+  .form-person .btn-info:hover {
+      background-color: #31b0d5;
+  }
+

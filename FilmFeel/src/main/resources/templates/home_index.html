@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>FilmFeel</title>
+    <div th:insert="fragments/_resources :: _head_resources"></div>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Just+Another+Hand&family=Podkova:wght@400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+          rel="stylesheet">
+
+
+    <link rel="stylesheet" th:href="@{/styles.css}">
+
+
+</head>
+
+
+<body>
+
+<nav th:replace="fragments/_fragments :: nav_bar"></nav>
+
+
+<div class="bg-light p-5 rounded">
+    <h1 class="display-1 text-bienvenido">Bienvenido a FilmFeel</h1>
+    <h2>Puntúa tus películas favoritas y no favoritas</h2>
+</div>
+<h4 class="text-danger mt-5 ultimos-estrenos">Últimos estrenos</h4>
+
+
+<div id="filmCarousel" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-4" th:each="film, stat : ${lastFilms}" th:if="${stat.index < 3}">
+                    <a th:href="@{/peliculas/{id}(id=*{film.id})}" class="card">
+                        <img th:src="@{/assets/{filename}(filename=*{film.posterRoute})}" class="img-fluid"
+                             th:alt="*{film.title}">
+                        <div class="card-body">
+                            <h2 class="card-title index-filmTitle" th:text="*{film.title}"></h2>
+                            <p th:text="*{film.duration} + ' minutos'" class="text-muted small"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item ">
+            <div class="row">
+                <div class="col-md-4" th:each="film, stat : ${lastFilms}" th:if="${stat.index >= 3 && stat.index < 6}">
+                    <a th:href="@{/peliculas/{id}(id=*{film.id})}" class="card">
+                        <img th:src="@{/assets/{filename}(filename=*{film.posterRoute})}" class="img-fluid"
+                             th:alt="*{film.title}">
+                        <div class="card-body">
+                            <h2 class="card-title index-filmTitle" th:text="*{film.title}"></h2>
+                            <p th:text="*{film.duration}+ ' minutos'" class="text-muted small"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-4" th:each="film, stat : ${lastFilms}" th:if="${stat.index >= 6 && stat.index < 9}">
+                    <a th:href="@{/peliculas/{id}(id=*{film.id})}" class="card">
+                        <img th:src="@{/assets/{filename}(filename=*{film.posterRoute})}" class="img-fluid"
+                             th:alt="*{film.title}">
+                        <div class="card-body">
+                            <h2 class="card-title index-filmTitle" th:text="*{film.title}"></h2>
+                            <p th:text="*{film.duration}+ ' minutos'" class="text-muted small"></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <a class="carousel-control-prev" href="#filmCarousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#filmCarousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </a>
+
+</div>
+
+
+<div th:insert="fragments/_resources :: _foot_resources"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simulación del estado de sesión. Cambia esto según tu lógica de autenticación.
+        var userLoggedIn = true; // Cambia a false para simular usuario desconectado.
+
+        if (userLoggedIn) {
+            document.getElementById("userLoggedIn").style.display = "inline";
+            document.getElementById("userLoggedOut").style.display = "none";
+        } else {
+            document.getElementById("userLoggedIn").style.display = "none";
+            document.getElementById("userLoggedOut").style.display = "inline";
+        }
+    });
+</script>
+
+<footer th:replace="fragments/_fragments :: _footer"></footer>
+</body>
+</html>
+
+

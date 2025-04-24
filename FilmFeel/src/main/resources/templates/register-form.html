@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Registro de Usuario</title>
+    <div th:insert="fragments/_resources :: _head_resources"></div>
+    <link rel="stylesheet" th:href="@{/styles.css}">
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand filmFeel-title" href="/">FILMFEEL</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/peliculas">Películas</a>
+            </li>
+        </ul>
+
+
+        <form class="d-flex" action="/buscar" method="get">
+            <input class="form-control me-2 search-box" name="query" type="search" placeholder="Búsqueda"
+                   aria-label="Search" style="margin-right: 10px;">
+            <button class="btn btn-outline-light" type="submit">Búsqueda</button>
+        </form>
+    </div>
+
+
+    <ul class="navbar-nav" style="margin-left: 10px; margin-right: 10px;">
+
+
+        <li class="nav-item">
+            <a class="nav-link" href="#" id="userIcon">
+
+                <img th:if="${user != null and user.image != null and user.image != ''}"
+                     th:src="@{/assets/{filename}(filename=${user.image})}"
+                     class="navbar-avatar rounded-circle"
+                     style="width: 40px; height: 40px; object-fit: cover;">
+
+                <img th:if="${user == null or user.image == null or user.image == ''}"
+                     th:src="@{/images/default-avatar.jpeg}"
+                     class="navbar-avatar rounded-circle" alt="Default Avatar"
+                     style="width: 40px; height: 40px; object-fit: cover;">
+
+
+            </a>
+        </li>
+
+        <li class="nav-item" th:if="${user==null}">
+            <a class="nav-link" th:href="@{/login}"></a>
+        </li>
+        <li class="nav-item" th:if="${user !=null}">
+            <a th:href="@{/usuario/{id}(id=${user.id})}" class="btn btn-view-profile btn-sm btn-outline-light">Ver
+                Perfil</a>
+        </li>
+    </ul>
+</nav>
+
+
+<h1 class="register-title">Formulario de Registro</h1>
+<form class="register-form" action="#" th:action="@{/registro}" th:object="${userForm}" method="post"
+      enctype="multipart/form-data">
+    <div class="form-group">
+        <label for="username" class="form-label">Nombre de Usuario:</label>
+        <input type="text" id="username" th:field="*{username}" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="password" class="form-label">Contraseña:</label>
+        <input type="password" id="password" th:field="*{password}" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="name" class="form-label">Nombre:</label>
+        <input type="text" id="name" th:field="*{name}" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="surname" class="form-label">Apellido:</label>
+        <input type="text" id="surname" th:field="*{surname}" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" id="email" th:field="*{email}" class="form-control" required/>
+    </div>
+    <div class="form-group">
+        <label for="birthDate" class="form-label">Fecha de Nacimiento:</label>
+        <input type="date" id="birthDate" th:field="*{birthDate}" class="form-control" min="1944-01-01" max="2006-12-31"
+               required/>
+    </div>
+    <div class="form-group">
+        <label for="image" class="form-label">Foto de Usuario:</label>
+        <input type="file" id="image" th:field="*{portada}" class="form-control" name="image" required/>
+    </div>
+    <div class="form-group">
+        <button type="submit" class="btn btn-register">Registrarse</button>
+    </div>
+</form>
+
+
+<div layout:fragment="content" class="container my-5">
+</div>
+
+<div th:insert="fragments/_resources :: _foot_resources"></div>
+<script>
+    $(document).ready(function() {
+        $('.select2').select2();
+    });
+
+</script>
+
+
+<div layout:fragment="scripts" th:remove="tag"></div>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // Simulación del estado de sesión. Cambia esto según tu lógica de autenticación.
+        var userLoggedIn = true; // Cambia a false para simular usuario desconectado.
+
+        if (userLoggedIn) {
+            document.getElementById("userLoggedIn").style.display = "inline";
+            document.getElementById("userLoggedOut").style.display = "none";
+        } else {
+            document.getElementById("userLoggedIn").style.display = "none";
+            document.getElementById("userLoggedOut").style.display = "inline";
+        }
+    });
+</script>
+<footer th:replace="fragments/_fragments :: _footer"></footer>
+</body>
+</html>

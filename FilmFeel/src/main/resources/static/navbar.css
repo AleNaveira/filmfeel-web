@@ -1,0 +1,75 @@
+  .navbar.bg-success {
+
+          background-color: #527a49 !important;
+           font-size:2em;
+       }
+
+
+.search-box{
+
+ font-size:1em;
+ }
+
+ .filmFeel-title{
+
+          font-size:2.5em;
+          }
+
+          .navbar .btn-view-profile{
+          font-size: 0.9em;
+          margin-top: 8px;
+          padding: 3px 10px;
+          border: 1px solid white;
+          }
+
+
+
+          .nav-item.login-register-buttons {
+              display: flex;
+              flex-direction: column;
+              gap: 10px;
+              margin-top: 10px;
+              padding-left: 0;
+              padding-right: 0;
+              list-style-type: none;
+          }
+
+          .nav-item.login-register-buttons li {
+              width: 100%;
+          }
+
+          .nav-item.login-register-buttons a {
+              display: block;
+              width: 100%;
+              text-align: center;
+              padding: 10px 0;
+              font-size: 16px;
+          }
+
+
+
+
+
+.user-navbar .navbar-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+}
+
+.user-navbar .navbar-profile-btn {
+    font-size: 0.85em;
+    padding: 4px 8px;
+    margin-top: 5px;
+    display: inline-block;
+}
+
+
+.user-navbar .user-avatar-item,
+.user-navbar .user-profile-btn-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

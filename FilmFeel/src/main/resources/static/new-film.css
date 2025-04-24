@@ -1,0 +1,43 @@
+
+ .new-film-form .form-label {
+     color:#527a49;
+     font-size: 1.5em;
+     font-weight: bold;
+ }
+
+
+  .new-film-form .form-control {
+      width: 95%;
+      margin-bottom: 1em; /* Espaciado entre los campos */
+  }
+
+  .new-film-form {
+
+   margin: 0 auto;
+       margin-top:100px;
+       margin-bottom:100px;
+
+       max-width: 800px;
+   }
+
+    .new-film-form input.form-control,
+    .new-film-form textarea.form-control,
+    .new-film-form select.form-control {
+        font-size: 1.2em;
+    }
+
+
+ .new-film-form .btn-success {
+     background-color: #527a49;
+     color: white;
+     border-color: #527a49;
+     font-size: 1.2em;
+     padding: 12px 24px;
+     margin-top: 20px;
+   }
+
+
+  .new-film-form .btn-success:hover {
+      background-color: #6b8c5d;
+      border-color: #6b8c5d;
+  }

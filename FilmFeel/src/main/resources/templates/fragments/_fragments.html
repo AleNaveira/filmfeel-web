@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<nav th:fragment="nav_bar" class="navbar navbar-expand-lg navbar-dark bg-success">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+            aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+        <a class="navbar-brand filmFeel-title" href="/">FILMFEEL</a>
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/peliculas">Películas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/peliculas/nueva-pelicula">Nueva película</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/personas/nueva-persona">Nueva persona</a>
+            </li>
+
+        </ul>
+
+
+        <form class="d-flex" action="/buscar" method="get">
+            <input class="form-control me-2 search-box" name="query" type="search" placeholder="Búsqueda"
+                   aria-label="Search" style="margin-right: 10px;">
+            <button class="btn btn-outline-light" type="submit">Búsqueda</button>
+        </form>
+
+
+        <ul class="navbar-nav user-navbar" style="margin-left: 10px; margin-right: 10px;">
+
+            <li class="nav-item user-avatar-item">
+                <a class="nav-link" href="#" id="userIcon">
+
+                    <img th:if="${user != null and user.image != null and user.image != ''}"
+                         th:src="@{/assets/{filename}(filename=${user.image})}"
+                         class="navbar-avatar rounded-circle"
+                         style="width: 40px; height: 40px; object-fit: cover;">
+
+                    <img th:if="${user == null or user.image == null or user.image == ''}"
+                         th:src="@{/images/default-avatar.jpeg}"
+                         class="navbar-avatar rounded-circle" alt="Default Avatar"
+                         style="width: 40px; height: 40px; object-fit: cover;">
+                </a>
+
+            </li>
+
+            <li class="nav-item user-profile-btn-item" th:if="${user !=null}">
+                <a th:href="@{/usuario/{id}(id=${user.id})}" class="btn navbar-profile-btn btn-sm btn-outline-light">Ver
+                    Perfil</a>
+            </li>
+
+
+            <ul class="nav-item login-register-buttons" th:if="${user == null}">
+                <li>
+                    <a href="/login" class="btn btn-sm btn-outline-light">Iniciar Sesión</a>
+                </li>
+                <li>
+                    <a href="/registro" class="btn btn-sm btn-outline-light">Registrarse</a>
+                </li>
+            </ul>
+
+
+        </ul>
+
+    </div>
+</nav>
+
+
+<footer th:fragment="_footer" class=" text-white text-center text-lg-start py-4 bg-success footer-style">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase font-weight-bold">FILMFEEL</h5>
+                <p class="footer-p">
+                    Tu lugar favorito para puntuar tus películas favoritas. ¡No te cortes! Descubre, añade y disfruta de
+                    contenido exclusivo.
+                </p>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase font-weight-bold">Enlaces útiles</h5>
+                <ul class="list-unstyled">
+                    <li><a href="/" class="text-white">Home</a></li>
+                    <li><a href="/peliculas" class="text-white">Películas</a></li>
+                    <li><a href="/peliculas/nueva-pelicula" class="text-white">Nueva película</a></li>
+                    <li><a href="/personas/nueva-persona" class="text-white">Nueva persona</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase font-weight-bold">Síguenos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#!" class="text-white">Facebook</a></li>
+                    <li><a href="#!" class="text-white">Twitter</a></li>
+                    <li><a href="#!" class="text-white">Instagram</a></li>
+                    <li><a href="#!" class="text-white">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                <h5 class="text-uppercase font-weight-bold">Contáctanos</h5>
+                <ul class="list-unstyled">
+                    <li><a href="mailto:contacto@filmfeel.com" class="text-white">contacto@filmfeel.com</a></li>
+                    <li><a href="tel:+34123456789" class="text-white">+34 123 456 789</a></li>
+                    <li><span class="text-white">Calle Falsa 123, Ciudad, País</span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2024 Copyright:
+        <a class="text-white" href="/">FILMFEEL</a>
+    </div>
+</footer>
+
+
+</html>
