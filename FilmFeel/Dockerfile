@@ -1,11 +1,11 @@
-# Usa una imagen base con Java 17 ya instalado
+# Etapa 1: compilar el .jar
+FROM maven:3.8.4-openjdk-17 AS build
+WORKDIR /app
+COPY . .
+RUN mvn clean package -DskipTests
+
+# Etapa 2: ejecutar el .jar
 FROM openjdk:17-jdk-slim
-
-# Define el nombre del archivo .jar que se va a copiar
-ARG JAR_FILE=target/FilmFeel-0.0.1-SNAPSHOT.jar
-
-# Copia ese archivo desde tu proyecto al contenedor y lo renombra como app.jar
-COPY ${JAR_FILE} app.jar
-
-# Comando que se ejecuta cuando arranca el contenedor
-ENTRYPOINT ["java", "-jar", "/app.jar"]
+WORKDIR /app
+COPY --from=build /app/target/*.jar app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
