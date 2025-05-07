@@ -30,8 +30,8 @@ public class HomeController {
     private StorageServiceImpl storageService;
 
 
-    @GetMapping("")
-    ModelAndView home_index() {
+ @GetMapping("")
+   ModelAndView home_index() {
 
         List<Film> lastFilms = filmRepository
                 .findAll(PageRequest.of(0, 10, Sort.by("title").descending()))
@@ -40,6 +40,8 @@ public class HomeController {
         return new ModelAndView("home_index")
                 .addObject("lastFilms", lastFilms);
     }
+
+
 
 
 }
