@@ -33,4 +33,8 @@ build/
 .vscode/
 
 
-/FilmFeel/Logs/
+/logs/
+*.log
+
+
+/target/
