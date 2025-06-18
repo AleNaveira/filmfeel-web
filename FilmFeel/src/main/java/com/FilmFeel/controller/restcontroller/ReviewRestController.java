@@ -10,6 +10,8 @@ import com.FilmFeel.repository.FilmRepository;
 import com.FilmFeel.service.MyUserService;
 import com.FilmFeel.service.ReviewService;
 import jakarta.validation.Valid;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -26,6 +28,8 @@ import java.util.stream.Collectors;
 @RestController
 @RequestMapping("/api")
 public class ReviewRestController {
+
+    private static final Logger logger = LoggerFactory.getLogger(ReviewRestController.class);
 
     @Autowired
     private ReviewService reviewService;
@@ -45,16 +49,21 @@ public class ReviewRestController {
 
         Authentication auth = SecurityContextHolder.getContext().getAuthentication();
         String username = auth.getName();
+
+        logger.info("Intento de creación de review por el usuario : {}", username);
         UserEntity user = myUserService.findByUsername(username);
 
         Optional<Review> existingReview = reviewService.findByUserAndFilm(user.getId(), newReviewDTO.getFilmId());
         if (existingReview.isPresent()) {
+            logger.warn("El usuario {} ya tiene una review para la película con ID", username, newReviewDTO.getFilmId());
             throw new ReviewAlreadyExistsException("El usuario ya ha creado una crítica para esta película");
         }
 
 
         Film film = filmRepository.findById(newReviewDTO.getFilmId())
                 .orElseThrow(() -> new RuntimeException("Película no encontrada"));
+
+        logger.info("Creando review para la película: {}", film.getTitle());
 
 
         Review review = new Review();
@@ -67,6 +76,7 @@ public class ReviewRestController {
 
         Review savedReview = reviewService.saveReview(review, user, film);
 
+        logger.info("Review creada exitosamente para la película: {} por el usuario: {}", film.getTitle());
 
         ReviewResponseDTO responseDTO = modelMapper.map(savedReview, ReviewResponseDTO.class);
         responseDTO.setUsername(user.getUsername());
@@ -77,18 +87,17 @@ public class ReviewRestController {
 
     @GetMapping("/user/{id}/reviews")
     public ResponseEntity<List<ReviewResponseDTO>> getReviewsByUser(@PathVariable Long id) {
-
+        logger.info("Obteniendo reviews del usuario con ID: {}", id);
         UserEntity user = myUserService.findById(id);
 
         if (user == null) {
-
-
+            logger.warn("Usuario con ID {} no encontrado", id);
             ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
         }
 
 
         List<Review> reviews = reviewService.getReviewsByUserId(id);
-
+           logger.info("Se encontraron {} reviews para el usuario con ID {}", reviews.size(),id);
 
         List<ReviewResponseDTO> reviewDTOs = reviews.stream()
                 .map(review -> {
@@ -106,6 +115,7 @@ public class ReviewRestController {
 
     @ExceptionHandler(ReviewAlreadyExistsException.class)
     public ResponseEntity<String> handleReviewAlreadyExistsException(ReviewAlreadyExistsException ex) {
+        logger.info("Se ha lanzado ReviewAlreadyExistsException :{}", ex.getMessage());
         return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
     }
 

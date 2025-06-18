@@ -5,6 +5,8 @@ import com.FilmFeel.model.Person;
 import com.FilmFeel.model.TypePersonEnum;
 import com.FilmFeel.repository.PersonRepository;
 import com.FilmFeel.service.PersonServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,6 +23,8 @@ import java.util.List;
 @RequestMapping("/personas")
 public class PersonController {
 
+    private static final Logger logger = LoggerFactory.getLogger(PersonController.class);
+
 
     @Autowired
     private PersonRepository personRepository;
@@ -32,8 +36,11 @@ public class PersonController {
     @GetMapping("")
     ModelAndView personIndex() {
 
+        logger.info("Accediendo a la lista de personas");
+
 
         List<Person> persons = personRepository.findAll();
+        logger.info("Se encontraron {} personas en total", persons.size());
 
         List<Person> actors = personServiceImpl.findByTypePerson(TypePersonEnum.ACTOR);
 
@@ -57,6 +64,8 @@ public class PersonController {
     @GetMapping("/nueva-persona")
     ModelAndView newPerson() {
 
+        logger.info("Accediendo al formulario de creación de nueva persona");
+
 
         return new ModelAndView("new-person")
                 .addObject("person", new Person())
@@ -66,7 +75,9 @@ public class PersonController {
 
     @PostMapping("/nueva-persona")
     ModelAndView submitPerson(@Validated @ModelAttribute("person") Person person, BindingResult bindingResult) {
+        logger.info("Intentando crear nueva persona : {}", person.getName());
         if (bindingResult.hasErrors()) {
+            logger.warn("Errores de validación al crear la persona: {}",person.getName());
 
 
             return new ModelAndView("new-person")
@@ -75,6 +86,7 @@ public class PersonController {
         }
 
         personRepository.save(person);
+        logger.info("Persona creada con éxito");
 
         return new ModelAndView("redirect:/personas");
     }
@@ -82,7 +94,10 @@ public class PersonController {
     @PostMapping("/{id}")
     String deletePerson(@PathVariable Long id) {
 
+        logger.info("Eliminando persona con ID:{}", id);
+
         personRepository.deleteById(id);
+        logger.info("Persona eliminada exitosamente con ID: {}", id);
 
         return "redirect:/personas";
 

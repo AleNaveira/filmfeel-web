@@ -1,8 +1,8 @@
 package com.FilmFeel.service;
 
-import com.FilmFeel.controller.authenticationJWTdto.AuthCreateUserRequest;
-import com.FilmFeel.controller.authenticationJWTdto.AuthLoginRequest;
-import com.FilmFeel.controller.authenticationJWTdto.AuthResponse;
+import com.FilmFeel.dto.authenticationJWTdto.AuthCreateUserRequest;
+import com.FilmFeel.dto.authenticationJWTdto.AuthLoginRequest;
+import com.FilmFeel.dto.authenticationJWTdto.AuthResponse;
 import com.FilmFeel.jwt.JwtUtils;
 import com.FilmFeel.model.UserEntity;
 import com.FilmFeel.repository.MyUserRepository;

@@ -1,11 +1,9 @@
-package com.FilmFeel.controller.authenticationJWTdto;
+package com.FilmFeel.dto.authenticationJWTdto;
 
 import jakarta.validation.constraints.NotBlank;
 
-public record AuthCreateUserRequest(
+public record AuthLoginRequest(
         @NotBlank String username,
         @NotBlank String password
-
 ) {
 }
-

@@ -2,6 +2,9 @@ package com.FilmFeel.controller;
 
 import com.FilmFeel.model.*;
 import com.FilmFeel.repository.FilmRepository;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 
 import com.FilmFeel.repository.ReviewRepository;
 import com.FilmFeel.repository.ScoreRepository;
@@ -32,6 +35,8 @@ import java.util.stream.Collectors;
 @RequestMapping("/peliculas")
 public class FilmController {
 
+    private static final Logger logger = LoggerFactory.getLogger(FilmController.class);
+
 
     @Autowired
     private FilmRepository filmRepository;
@@ -51,9 +56,10 @@ public class FilmController {
 
     @GetMapping("")
     ModelAndView index(@PageableDefault(sort = "title", size = 5) Pageable pageable) {
-
+        logger.info("Accediendo al listado de películas");
 
         Page<Film> films = filmRepository.findAll(pageable);
+        logger.info("Se encontraron {} películas", films.getTotalElements());
 
 
         ModelAndView modelAndView = new ModelAndView("films");
@@ -97,6 +103,8 @@ public class FilmController {
     @GetMapping("/nueva-pelicula")
     ModelAndView newFilm() {
 
+        logger.info("Accediendo al formulario de nueva película");
+
 
         List<Person> photographers = personServiceImpl.getAllPhotographers();
         List<Person> scriptwriters = personServiceImpl.getAllScriptwriters();
@@ -118,14 +126,14 @@ public class FilmController {
 
     @PostMapping("/nueva-pelicula")
     ModelAndView createFilm(@Validated Film film, BindingResult bindingResult) {
-
+    logger.info("Intentando crear nueva película : {}", film.getTitle());
         if (bindingResult.hasErrors() || film.getPortada().isEmpty()) {
 
             if (film.getPortada().isEmpty()) {
+                logger.warn("El campo portada está vacío");
                 bindingResult.rejectValue("portada", "MultipartNotEmpty");
-
-
             }
+            logger.warn("Errores de validación al crear la película: {}", film.getTitle());
 
 
             return new ModelAndView("new-film")
@@ -140,6 +148,7 @@ public class FilmController {
 
 
         filmRepository.save(film);
+        logger.info("Película creada exitosamente");
 
         return new ModelAndView("redirect:/peliculas");
 
@@ -148,6 +157,8 @@ public class FilmController {
     @GetMapping("/{id}")
     ModelAndView filmDetails(@PathVariable Long id) {
 
+        logger.info("Accediendo a los detalles de la película con ID: {}", id);
+
 
         ModelAndView model = new ModelAndView("film_detail");
         Film film = filmRepository.findById(id).orElse(null);
@@ -155,12 +166,14 @@ public class FilmController {
 
         if (film == null) {
 
+            logger.warn("No se encontró la película con ID: {}", id);
+
             return new ModelAndView("redirect:/peliculas");
 
 
         }
         List<Review> reviews = reviewRepository.findByFilmIdWithUser(id);
-
+        logger.info("La película tiene {} reviews", reviews.size());
         System.out.println("Reviews size: " + reviews.size());
 
         Person photographer = film.getPhotographer();
@@ -198,6 +211,7 @@ public class FilmController {
 
     @GetMapping("/{id}/editar")
     ModelAndView editFilm(@PathVariable Long id) {
+        logger.info("Accediendo al formulario de edición de la película con ID: {}", id);
 
 
         Film film = filmRepository.getReferenceById(id);
@@ -213,8 +227,12 @@ public class FilmController {
     ModelAndView updateFilm(@PathVariable Long id, @Validated Film film
             , BindingResult bindingResult) {
 
+        logger.info("Intentando actualizar la película con ID: {}", id);
+
 
         if (bindingResult.hasErrors()) {
+
+            logger.warn("Errores de validación al actualizar la película con ID: {}", id);
 
 
             return new ModelAndView("editar-pelicula")
@@ -232,11 +250,13 @@ public class FilmController {
             storageService.delete(peliculaFromDb.getPosterRoute());
             String posterRoute = storageService.storage(film.getPortada());
             peliculaFromDb.setPosterRoute(posterRoute);
+            logger.info("Portada actualizada para la pelicula con ID: {}",id);
 
 
         }
 
         filmRepository.save(peliculaFromDb);
+        logger.info("Película actualizada con éxito");
 
 
         return new ModelAndView("redirect:/peliculas");
@@ -249,6 +269,7 @@ public class FilmController {
 
     @Transactional
     String deleteFilm(@PathVariable Long id) {
+        logger.info("Eliminando la película con ID: {}",id);
 
 
         Film film = filmRepository.getReferenceById(id);
@@ -256,6 +277,7 @@ public class FilmController {
         reviewRepository.deleteByFilm(film);
         filmRepository.delete(film);
         storageService.delete(film.getPosterRoute());
+        logger.info("Película eliminada con éxito");
 
 
         return "redirect:/peliculas";

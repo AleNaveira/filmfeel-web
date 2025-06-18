@@ -1,6 +1,7 @@
 package com.FilmFeel.controller;
 
-
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import com.FilmFeel.model.UserEntity;
 import com.FilmFeel.repository.RoleRepository;
 import com.FilmFeel.service.MyUserService;
@@ -19,6 +20,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 @RequestMapping("/usuario")
 public class MyUserController {
+    private static final Logger logger = LoggerFactory.getLogger(MyUserController.class);
 
     @Autowired
     private MyUserService userService;
@@ -36,6 +38,8 @@ public class MyUserController {
 
     @GetMapping("/{id}")
     ModelAndView userDetails(@PathVariable Long id) {
+
+        logger.info("Accediendo a los detalles del usuario con ID: {}", id);
 
 
         ModelAndView model = new ModelAndView("user-details");
