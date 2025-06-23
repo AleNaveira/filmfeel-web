@@ -1,6 +1,3 @@
-
-
-
 .register-title {
     font-family: 'Anastasia', sans-serif;
     font-size: 2.5em;
@@ -55,4 +52,31 @@
 
 .register-form .btn-register:hover {
     background-color: #6b8c5d;
+}
+
+/* ? Responsive */
+@media (max-width: 768px) {
+    .register-title {
+        font-size: 2em;
+        padding: 0 10px;
+    }
+
+    .register-form {
+        padding: 15px;
+        margin: 0 10px;
+    }
+
+    .register-form .form-label {
+        font-size: 1em;
+    }
+
+    .register-form .form-control {
+        font-size: 1em;
+    }
+
+    .register-form .btn-register {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px;
+    }
 }

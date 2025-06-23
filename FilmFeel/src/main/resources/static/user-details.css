@@ -1,10 +1,8 @@
-.user-actions{
-
-text-align: center;
- margin-top: 30px;
- margin-bottom: 30px;
+.user-actions {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
-
 
 .user-container {
     font-family: 'Anastasia', sans-serif;
@@ -14,14 +12,12 @@ text-align: center;
     color: #343a40;
 }
 
-
 .user-name {
     font-size: 2.5em;
     color: #527a49;
     font-weight: bold;
     margin-bottom: 0.5em;
 }
-
 
 .user-image-wrapper {
     display: flex;
@@ -49,7 +45,6 @@ text-align: center;
     border-radius: 20px;
 }
 
-
 .user-details p {
     font-size: 1.3em;
     color: #527a49;
@@ -61,7 +56,6 @@ text-align: center;
     font-weight: 600;
     color: #343a40;
 }
-
 
 .user-actions-container {
     text-align: center;
@@ -83,7 +77,6 @@ text-align: center;
     transition: all 0.3s ease;
     border-radius: 8px;
 }
-
 
 .user-actions-container .btn-danger {
     background-color: #dc3545;
@@ -113,16 +106,12 @@ text-align: center;
     border-top: 2px solid #e0e0e0;
 }
 
-
-
-
 @font-face {
     font-family: 'Anastasia';
     src: url('/fonts/Anastasia.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-
 
 .user-details-body {
     font-family: 'Anastasia', sans-serif;
@@ -131,7 +120,6 @@ text-align: center;
     padding: 0;
 }
 
-
 .user-card {
     border: none;
     border-radius: 10px;
@@ -139,13 +127,11 @@ text-align: center;
     background-color: #ffffff;
 }
 
-
 .user-image {
     width: 100%;
     height: auto;
     object-fit: cover;
 }
-
 
 .user-details {
     color: #333;
@@ -155,7 +141,6 @@ text-align: center;
     font-size: 2rem;
     font-weight: bold;
 }
-
 
 .user-actions-container {
     margin-top: 30px;
@@ -167,16 +152,52 @@ text-align: center;
     color: #444;
 }
 
-
 .user-actions-container .btn {
     border-radius: 5px;
     font-size: 1rem;
     font-weight: 500;
 }
 
-
 .user-footer-style {
     background-color: #f8f9fa;
     color: #555;
     font-size: 0.9rem;
+}
+
+/* ? Responsive */
+@media (max-width: 768px) {
+    .user-name {
+        font-size: 1.6em;
+        text-align: center;
+    }
+
+    .user-image-wrapper {
+        width: 90%;
+        height: auto;
+    }
+
+    .user-details p {
+        font-size: 1.1em;
+        text-align: center;
+    }
+
+    .user-actions-container {
+        padding: 0 10px;
+    }
+
+    .user-actions-title {
+        font-size: 1.3em;
+        text-align: center;
+    }
+
+    .user-actions-container .btn {
+        width: 100%;
+        font-size: 1em;
+        margin-bottom: 10px;
+    }
+
+    .user-footer-style {
+        font-size: 0.85rem;
+        padding: 10px;
+    }
 }

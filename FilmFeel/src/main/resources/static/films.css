@@ -1,127 +1,159 @@
+.films-table {
+    background-color: #f5f5f5;
+}
 
- .films-table {
-     background-color: #f5f5f5;
- }
+.film-title {
+    font-size: 1.6em;
+    color: #527a49;
+    font-weight: bold;
+}
 
+.film-synopsis {
+    font-size: 1.2em;
+    color: #000000; /* Corregido: había dos propiedades 'color' seguidas */
+}
 
-  .film-title {
-      font-size: 1.6em;
-      color: #527a49;
-      font-weight: bold;
-  }
+.films-table .custom-btn {
+    padding: 12px 24px;
+    font-size: 1.1em;
+    color: #fff;
+    margin-top: 5px;
+    display: block;
+    width: 50%;
+    text-align: center;
+}
 
+.films-table .custom-btn.btn-success {
+    background-color: #527a49;
+    border-color: #527a49;
+}
 
-   .film-synopsis {
-       font-size: 1.2em;
-       color: #527a49;
-        color: #000000;
-   }
+.films-table .custom-btn.btn-success:hover {
+    background-color: #6b8c5d;
+}
 
+.films-table .custom-btn.btn-warning {
+    background-color: #ffc107;
+    border-color: #ffc107;
+}
 
+.films-table .custom-btn.btn-danger {
+    background-color: #dc3545;
+    border-color: #dc3545;
+}
 
-    .films-table .custom-btn {
-        padding: 12px 24px;
-        font-size: 1.1em;
-        color: #fff;
-        margin-top: 5px;
-        display: block;
-        width: 50%;
+.films-table .actions {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.films-table h6 {
+    font-size: 1.4em;
+    color: #527a49;
+    font-weight: bold;
+}
+
+.film-year-films {
+    font-size: 1.7em;
+    color: #f1b37c !important;
+    font-weight: bold;
+}
+
+.films-table th {
+    font-size: 2em;
+    color: #527a49;
+    font-weight: bold;
+}
+
+.table-films-title {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.table-films-title h2 {
+    font-size: 5em;
+    color: #527a49;
+    margin: 0;
+}
+
+.nueva-pelicula-button {
+    background-color: #527a49;
+    border-color: #527a49;
+    color: #fff;
+    font-size: 1.4em;
+    padding: 12px 24px;
+}
+
+.nueva-pelicula-button:hover {
+    background-color: #6b8c5d;
+    border-color: #6b8c5d;
+}
+
+.films-table .btn-primary {
+    background-color: #d2b48c;
+    border-color: #d2b48c;
+}
+
+.films-table .btn-primary:hover {
+    background-color: #c19a6b;
+    border-color: #c19a6b;
+}
+
+.films-table .card-body h5 {
+    font-weight: bold;
+}
+
+.films-table .card-body .badge {
+    background-color: #527a49;
+    font-size: 1.1em;
+    padding: 0.5em 0.7em;
+    color: white;
+}
+
+/* ? Estilos responsive para móviles */
+@media (max-width: 768px) {
+    .film-title {
+        font-size: 1.3em;
         text-align: center;
     }
 
+    .film-synopsis {
+        font-size: 1em;
+        text-align: justify;
+    }
 
-     .films-table .custom-btn.btn-success {
-         background-color: #527a49;
-         border-color: #527a49;
-     }
+    .films-table h6,
+    .film-year-films {
+        font-size: 1.2em;
+        text-align: center;
+    }
 
+    .films-table th {
+        font-size: 1.3em;
+        text-align: center;
+    }
 
-      .films-table .custom-btn.btn-success:hover {
-          background-color: #6b8c5d;
-      }
+    .table-films-title h2 {
+        font-size: 2.8em;
+    }
 
+    .films-table .custom-btn {
+        width: 100%;
+        font-size: 1em;
+        padding: 10px 0;
+    }
 
-       .films-table .custom-btn.btn-warning {
-           background-color: #ffc107;
-           border-color: #ffc107;
-       }
+    .nueva-pelicula-button {
+        width: 100%;
+        font-size: 1.1em;
+        padding: 10px 0;
+    }
 
+    .films-table .card-body .badge {
+        font-size: 0.95em;
+    }
 
-       .films-table .custom-btn.btn-danger {
-           background-color: #dc3545;
-           border-color: #dc3545;
-       }
-
-
-        .films-table .actions {
-            text-align: left;
-            margin-top: 10px;
-        }
-
-
-        .films-table h6 {
-            font-size: 1.4em;
-            color: #527a49;
-            font-weight: bold;
-        }
-
-
-         .film-year-films {
-             font-size: 1.7em;
-             color: #f1b37c !important;
-             font-weight: bold;
-
-         }
-
-          .films-table th {
-              font-size: 2em;
-              color: #527a49;
-              font-weight: bold;
-          }
-
-
-           .table-films-title {
-               text-align: center;
-               margin-top: 50px;
-           }
-
-
-            .table-films-title h2 {
-                font-size: 5em;
-                color: #527a49;
-                margin: 0;
-            }
-
-
-             .nueva-pelicula-button {
-                 background-color: #527a49;
-                 border-color: #527a49;
-                 color: #fff;
-                 font-size: 1.4em;
-                 padding: 12px 24px;
-             }
-
-             .nueva-pelicula-button:hover {
-                 background-color: #6b8c5d;
-                 border-color: #6b8c5d;
-             }
-
-             .films-table .btn-primary {
-                 background-color: #d2b48c;
-                 border-color: #d2b48c;
-             }
-
-             .films-table .btn-primary:hover {
-                 background-color: #c19a6b;
-                 border-color: #c19a6b;
-             }
-
-             .films-table .card-body h5 {
-                 font-weight: bold;
-             }
-             .films-table .card-body .badge {
-                 background-color: #527a49;
-                 font-size: 1.1em;
-                 padding: 0.5em 0.7em;
-                 color: white;
-             }
+    .films-table .actions {
+        text-align: center;
+    }
+}

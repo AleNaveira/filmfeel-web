@@ -1,56 +1,78 @@
- .label-newperson{
+ .label-newperson {
+     font-size: 2em;
+ }
 
-         font-size: 2em;
-
-
-         }
-
-.form-person .form-label {
+ .form-person .form-label {
      color: #527a49;
      font-size: 1.5em;
      font-weight: bold;
  }
 
-  .form-person .form-control {
-      color: #527a49;
-      font-size: 1em;
-      border: 1px solid #527a49;
-       max-width: 800px;
-          width: 100%;
-          margin: 0 auto;
-  }
+ .form-person .form-control {
+     color: #527a49;
+     font-size: 1em;
+     border: 1px solid #527a49;
+     max-width: 800px;
+     width: 100%;
+     margin: 0 auto;
+ }
 
+ .form-person .btn {
+     padding: 12px 24px;
+     font-size: 1.1em;
+     color: #fff;
+ }
 
-   .form-person .btn {
-       padding: 12px 24px;
-       font-size: 1.1em;
-       color: #fff;
-   }
+ .form-person .btn-success {
+     background-color: #527a49;
+     border-color: #527a49;
+ }
 
-    .form-person .btn-success {
-        background-color: #527a49;
-        border-color: #527a49;
-    }
-    .form-person .btn-success:hover {
-        background-color: #6b8c5d;
-    }
+ .form-person .btn-success:hover {
+     background-color: #6b8c5d;
+ }
+
  .form-person .btn-warning {
      background-color: #f0ad4e;
      border-color: #eea236;
      color: #fff;
  }
 
-  .form-person .btn-info {
-      background-color: #5bc0de;
-      border-color: #46b8da;
-      color: #fff;
-  }
+ .form-person .btn-info {
+     background-color: #5bc0de;
+     border-color: #46b8da;
+     color: #fff;
+ }
 
-  .form-person .btn-warning:hover {
-      background-color: #ec971f;
-  }
+ .form-person .btn-warning:hover {
+     background-color: #ec971f;
+ }
 
-  .form-person .btn-info:hover {
-      background-color: #31b0d5;
-  }
+ .form-person .btn-info:hover {
+     background-color: #31b0d5;
+ }
 
+ /* ? Responsive */
+ @media (max-width: 768px) {
+     .label-newperson {
+         font-size: 1.4em;
+         text-align: center;
+     }
+
+     .form-person .form-label {
+         font-size: 1.2em;
+         text-align: left;
+     }
+
+     .form-person .form-control {
+         font-size: 1em;
+         width: 100%;
+     }
+
+     .form-person .btn {
+         width: 100%;
+         font-size: 1em;
+         padding: 10px;
+         margin-top: 10px;
+     }
+ }

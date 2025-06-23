@@ -1,8 +1,6 @@
-
 .rating-container {
     margin-bottom: 2rem;
 }
-
 
 .rating-title {
     font-size: 1.8rem;
@@ -10,13 +8,11 @@
     margin-right: 1.5rem;
 }
 
-
 .rating-form {
     display: flex;
     align-items: center;
     gap: 1.5rem;
 }
-
 
 .star-rating {
     direction: rtl;
@@ -25,11 +21,9 @@
     font-size: 2rem;
 }
 
-
 .star-rating input[type="radio"] {
     display: none;
 }
-
 
 .star-rating label {
     color: #ccc;
@@ -39,32 +33,25 @@
     transition: color 0.2s ease-in-out;
 }
 
-
 .star-rating input[type="radio"]:checked ~ label,
 .star-rating label:hover,
 .star-rating label:hover ~ label {
     color: #f5c518;
 }
 
-
 .rating-button {
     margin-top: 0 !important;
 }
-
-
-
 
 .average-rating-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-
 .average-title {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
-
 
 .average-stars {
     font-size: 2.2rem;
@@ -74,9 +61,46 @@
     gap: 0.5rem;
 }
 
-
 .average-score-text {
     font-weight: bold;
     color: #333;
     margin-left: 0.5rem;
+}
+
+/* ? Estilos responsive para móviles */
+@media (max-width: 768px) {
+    .rating-title {
+        font-size: 1.4rem;
+        margin-right: 0;
+        text-align: center;
+    }
+
+    .rating-form {
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+    }
+
+    .star-rating {
+        font-size: 1.8rem;
+    }
+
+    .star-rating label {
+        padding: 8px;
+    }
+
+    .average-title {
+        font-size: 1.4rem;
+        text-align: center;
+    }
+
+    .average-stars {
+        font-size: 1.8rem;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .average-score-text {
+        font-size: 1rem;
+    }
 }

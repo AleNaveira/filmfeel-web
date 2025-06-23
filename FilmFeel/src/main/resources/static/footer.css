@@ -1,16 +1,27 @@
- .footer-style.bg-success{
-             font-family: 'Anastasia', sans-serif;
-             font-weight: bold;
-             font-size: 1.2em;
-             background-color:  #527a49 !important;
-             color: #6d1e1e;
-             padding: 10px;
-             text-align: center;
-         }
+.footer-style.bg-success {
+    font-family: 'Anastasia', sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    background-color: #527a49 !important;
+    color: #6d1e1e;
+    padding: 10px;
+    text-align: center;
+}
 
+.footer-p {
+    font-size: 1em;
+    font-weight: normal !important;
+}
 
-         .footer-p{
-          font-size:1em;
-          font-weight: normal !important;
+/* ? Estilos responsive para móviles */
+@media (max-width: 768px) {
+    .footer-style.bg-success {
+        font-size: 1em;
+        padding: 15px 10px;
+        text-align: center;
+    }
 
-          }
+    .footer-p {
+        font-size: 0.9em;
+    }
+}

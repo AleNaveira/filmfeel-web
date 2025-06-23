@@ -1,114 +1,154 @@
-.form .invalid-feedback{
-         display: block
-         }
+.form .invalid-feedback {
+    display: block;
+}
 
-         @font-face {
-             font-family: 'Anastasia';
-             src: url('/fonts/Anastasia.otf') format('opentype');
-             font-weight: normal;
-             font-style: normal;
-         }
+/* Tipografía personalizada */
+@font-face {
+    font-family: 'Anastasia';
+    src: url('/fonts/Anastasia.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
 
-         body {
-             font-family: 'Anastasia', sans-serif;
-         }
+/* Estilos generales */
+body {
+    font-family: 'Anastasia', sans-serif;
+}
 
-         h1 {
-             font-family: 'Anastasia', sans-serif;
-             font-weight: bold;
-             font-size: 2.5em;
-             color: #527a49;
-         }
-
-         p {
-             font-family: 'Anastasia', sans-serif;
-             font-weight: bold;
-             font-size: 1.5em;
-         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-         body {
-             font-family: 'Anastasia', sans-serif; /* Aplica la fuente a todo el contenido del cuerpo */
-         }
-
-
-.card-title {
-    font-size: 1rem; /* Cambiado a 1rem para que se ajuste mejor */
+/* Títulos */
+h1 {
+    font-family: 'Anastasia', sans-serif;
     font-weight: bold;
-    margin-bottom: 5px; /* Ajustado el margen inferior */
+    font-size: 2.5em;
+    color: #527a49;
 }
 
-.card-title.p{
- font-size:3em !important;
- font-color: #fffff
-
- }
-
-
-
-
- .text-muted.small {
- font-size:1.5em;
- }
-
- /* Estilo específico para el año de la película */
- .film-year {
-     font-size: 1.7em;  /* Aumentar el tamaño del texto */
-     color: #f1b37c !important;
-     font-weight: bold; /* Color verde */
-
- }
-
-  /* Ajustar el espaciado a la derecha del contenedor del botón */
-  .text-end {
-      padding-right: 20px; /* Añade espacio a la derecha del contenedor */
-  }
-
-  /* Ajustes visuales para las tarjetas */
-  .card-body {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: center;
-      height: 100%;
-  }
-
-  .card-text {
-      font-size: 0.9rem; /* Tamaño más pequeño para el tipo de persona */
-      font-weight: normal;
-      margin-bottom: 5px; /* Ajustado el margen inferior */
-  }
-
-  .card {
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      transition: transform 0.3s ease-in-out;
-  }
-
-  .card:hover {
-      transform: scale(1.05); /* Efecto de hover en las tarjetas */
-  }
-
-
-/* Estilos específicos para el formulario de login */
-#loginForm .form-control {
-    max-width: 300px;  /* Ajusta el ancho máximo de los inputs */
-    margin: 0 auto;    /* Centra los inputs */
+/* Párrafos */
+p {
+    font-family: 'Anastasia', sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
+/* Título de tarjetas */
+.card-title {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Corrección: subtítulo dentro de card-title */
+.card-title p {
+    font-size: 3em !important;
+    color: #ffffff;
+}
+
+/* Texto secundario */
+.text-muted.small {
+    font-size: 1.5em;
+}
+
+/* Año de la película */
+.film-year {
+    font-size: 1.7em;
+    color: #f1b37c !important;
+    font-weight: bold;
+}
+
+/* Alineación final de texto */
+.text-end {
+    padding-right: 20px;
+}
+
+/* Contenido de la tarjeta */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Texto dentro de tarjetas */
+.card-text {
+    font-size: 0.9rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+/* Estilo visual de las tarjetas */
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Estilos para formulario de login */
 #loginForm {
-    max-width: 400px;   /* Limita el tamaño del formulario */
-    margin: 0 auto;     /* Centra el formulario en la página */
-    padding: 20px;      /* Agrega espacio alrededor del formulario */
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#loginForm .form-control {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+/* 📱 Estilos responsive para móviles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+        text-align: center;
+    }
+
+    p {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .card-text {
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+    .film-year {
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .text-end {
+        padding-right: 10px;
+        text-align: center;
+    }
+
+    .card-body {
+        align-items: center;
+        text-align: center;
+    }
+
+    #loginForm {
+        width: 100%;
+        max-width: 90%;
+        padding: 15px;
+    }
+
+    #loginForm .form-control {
+        width: 100%;
+        max-width: none;
+    }
 }
