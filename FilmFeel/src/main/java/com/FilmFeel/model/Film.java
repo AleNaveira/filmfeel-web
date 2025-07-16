@@ -31,7 +31,7 @@ public class Film {
     @Column(name = "film_posterRoute")
     private String posterRoute;
     @Column(name = "migrate")
-    private boolean migrate;
+    private boolean migrate =false;
 
     @Column(name = "date_migrate")
     private LocalDate dateMigrate;
