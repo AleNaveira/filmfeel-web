@@ -75,7 +75,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-batch</artifactId>
-			<version>3.3.3</version>
 		</dependency>
 
 		<dependency>
@@ -87,7 +86,7 @@
 		<dependency>
 			<groupId>org.thymeleaf.extras</groupId>
 			<artifactId>thymeleaf-extras-springsecurity6</artifactId>
-			<version>3.1.2.RELEASE</version>  <!-- ó la versión más cercana a tu Thymeleaf 3.1.x -->
+			<version>3.1.2.RELEASE</version>
 		</dependency>
 
 
