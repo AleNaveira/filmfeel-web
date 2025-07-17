@@ -118,6 +118,11 @@
 			<version>2.1.0</version> <!-- o la versión más reciente compatible -->
 		</dependency>
 
+		<dependency>
+			<groupId>org.springframework.batch</groupId>
+			<artifactId>spring-batch-test</artifactId>
+			<scope>test</scope>
+		</dependency>
 
 
 

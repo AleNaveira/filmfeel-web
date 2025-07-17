@@ -9,12 +9,13 @@ public class FilmRowMapper implements RowMapper<FilmDTO> {
     @Override
     public FilmDTO mapRow(ResultSet rs, int rowNum) throws SQLException {
         return new FilmDTO(
-                rs.getLong("id"),
-                rs.getString("title"),
-                rs.getObject("year", Integer.class),
-                rs.getObject("duration", Integer.class),
-                rs.getString("synopsis"),
+                rs.getLong("film_id"),
+                rs.getString("film_title"),
+                rs.getObject("film_year", Integer.class),
+                rs.getObject("film_duration", Integer.class),
+                rs.getString("film_synopsis"),
                 rs.getString("poster_route")
         );
     }
 }
+

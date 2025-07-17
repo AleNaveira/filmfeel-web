@@ -1,5 +1,6 @@
 package com.FilmFeel.batch;
 
+
 public record FilmDTO(
         Long id,
         String title,
@@ -8,3 +9,4 @@ public record FilmDTO(
         String synopsis,
         String posterRoute
 ) { }
+

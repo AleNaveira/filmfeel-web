@@ -1,12 +1,10 @@
 package com.FilmFeel.batch;
 
-
-
 import lombok.RequiredArgsConstructor;
 import lombok.SneakyThrows;
 import org.springframework.batch.core.Job;
-import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.batch.core.JobParametersBuilder;
+import org.springframework.batch.core.launch.JobLauncher;
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
@@ -19,16 +17,16 @@ public class FilmJobScheduler {
     private final JobLauncher jobLauncher;
     private final Job exportFilmsJob;
 
-    /** Se lanza cada día a las 02:00 AM */
-    @Scheduled(cron = "0 0 2 * * *")
+    // Se ejecuta 5 min (300_000 ms) después de arrancar, y cada 5 min
+    @Scheduled(fixedRate = 300_000, initialDelay = 0)
     @SneakyThrows
-    public void runDailyExport() {
-        String fileName = "films-" + LocalDate.now() + ".csv";
-        var params = new JobParametersBuilder()
-                .addString("outputFile", fileName)
-                .addLong("timestamp", System.currentTimeMillis())
-                .toJobParameters();
-        jobLauncher.run(exportFilmsJob, params);
+    public void runEveryFiveMinutes() {
+        jobLauncher.run(exportFilmsJob,
+                new JobParametersBuilder()
+                        .addString("outputFile", "films-" + LocalDate.now() + ".csv")
+                        .addLong("timestamp", System.currentTimeMillis())
+                        .toJobParameters()
+        );
     }
 }
 
