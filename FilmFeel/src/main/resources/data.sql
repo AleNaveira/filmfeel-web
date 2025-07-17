@@ -27,3 +27,4 @@ WHERE u.user_username = 'admin' AND r.name = 'ADMIN'
 AND NOT EXISTS (
     SELECT 1 FROM user_roles WHERE user_id = u.user_id AND role_id = r.id
 );
+

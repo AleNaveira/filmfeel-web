@@ -13,12 +13,12 @@ public class FilmStepListener {
 
     @BeforeStep
     public void beforeStep(StepExecution stepExecution) {
-        log.info("▶️ Iniciando Step “{}”", stepExecution.getStepName());
+        log.info(" Iniciando Step “{}”", stepExecution.getStepName());
     }
 
     @AfterStep
     public ExitStatus afterStep(StepExecution stepExecution) {
-        log.info("▶️ Fin de Step “{}” – readCount={} writeCount={}",
+        log.info("▶Fin de Step “{}” – readCount={} writeCount={}",
                 stepExecution.getStepName(),
                 stepExecution.getReadCount(),
                 stepExecution.getWriteCount());

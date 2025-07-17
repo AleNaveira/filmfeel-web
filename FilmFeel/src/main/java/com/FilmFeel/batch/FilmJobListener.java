@@ -19,15 +19,17 @@ public class FilmJobListener extends JobExecutionListenerSupport {
 
     @Override
     public void beforeJob(JobExecution jobExecution) {
+        System.out.println("Job comienza...");
         Integer toMigrate = jdbc.queryForObject(
                 "SELECT COUNT(*) FROM film WHERE migrate = FALSE", Integer.class);
-        log.info("🔍 Pendientes de migrar: {}", toMigrate);
+        log.info(" Pendientes de migrar: {}", toMigrate);
     }
 
     @Override
     public void afterJob(JobExecution jobExecution) {
+        System.out.println("Job finalizado con estado: " + jobExecution.getStatus());
         Integer remaining = jdbc.queryForObject(
                 "SELECT COUNT(*) FROM film WHERE migrate = FALSE", Integer.class);
-        log.info("✅ Quedan sin migrar: {}", remaining);
+        log.info("Quedan sin migrar: {}", remaining);
     }
 }

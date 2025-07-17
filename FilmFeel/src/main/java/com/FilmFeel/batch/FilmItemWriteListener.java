@@ -43,11 +43,11 @@ public class FilmItemWriteListener implements ItemWriteListener<FilmDTO> {
                 .addValue("ids", ids);
 
         int updated = jdbc.update(sql, params);
-        log.info("▶️ Marcadas {} películas como migradas", updated);
+        log.info("Marcadas {} películas como migradas", updated);
     }
 
     @Override
     public void onWriteError(Exception exception, Chunk<? extends FilmDTO> chunk) {
-        log.error("❌ Error escribiendo chunk", exception);
+        log.error(" Error escribiendo chunk", exception);
     }
 }

@@ -1,5 +1,6 @@
 package com.FilmFeel.batch;
 
+
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -73,11 +74,11 @@ public class FilmBatchConfig {
     }
 
     @Bean
-    public Step exportFilmsStep() throws Exception {
+    public Step exportFilmsStep(FlatFileItemWriter<FilmDTO> fileWriter) throws Exception {
         return new StepBuilder("exportFilmsStep", jobRepository)
-                .<FilmDTO,FilmDTO>chunk(50, txManager)
+                .<FilmDTO, FilmDTO>chunk(50, txManager)
                 .reader(filmReader())
-                .writer(fileWriter(null))
+                .writer(fileWriter)
                 .listener(jobListener)
                 .listener(writeListener)
                 .build();
@@ -87,7 +88,7 @@ public class FilmBatchConfig {
     public Job exportFilmsJob() throws Exception {
         return new JobBuilder("exportFilmsJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .start(exportFilmsStep())
+                .start(exportFilmsStep(fileWriter(null)))  // ⚠️ No modificar esta línea, Spring la gestiona
                 .build();
     }
 }
