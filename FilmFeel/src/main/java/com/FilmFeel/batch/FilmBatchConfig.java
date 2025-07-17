@@ -83,7 +83,7 @@ public class FilmBatchConfig {
                 .build();
     }
 
-    @Bean
+    @Bean(name = "filmMigrationJob")
     public Job exportFilmsJob() throws Exception {
         return new JobBuilder("exportFilmsJob", jobRepository)
                 .incrementer(new RunIdIncrementer())

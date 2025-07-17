@@ -19,9 +19,10 @@ public class BatchJobScheduler {
 
     @Scheduled(cron = "0 */5 * * * *")  // cada día a medianoche
     public void launchJob() throws Exception {
+        System.out.println("Intentando lanzar el batch...");
         String fileName = LocalDate.now() + "_films.csv";
         var params = new JobParametersBuilder()
-                .addString("output.file.name", fileName)
+                .addString("outputFile", fileName)
                 .addDate("runDate", new Date())
                 .toJobParameters();
         jobLauncher.run(filmMigrationJob, params);
