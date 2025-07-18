@@ -32,7 +32,7 @@ public class SecurityConfig {
                         .requestMatchers("/", "/login", "/registro").permitAll()
                         .requestMatchers("/admin/**").hasRole("ADMIN")
                         .requestMatchers("/peliculas/**").permitAll()
-                        .requestMatchers("/personas/**", "/personas/nueva-persona").permitAll()
+                        .requestMatchers("/personas/**", "/personas/nueva-persona", "/").permitAll()
                         .requestMatchers("/usuario/**").hasAnyRole("USER", "ADMIN")
                         .anyRequest().permitAll()
                 )

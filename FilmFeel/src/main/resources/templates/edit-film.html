@@ -17,6 +17,7 @@
 <div class="form">
 
     <form action="" method="post" th:object="${film}" enctype="multipart/form-data">
+        <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}" />
         <div class="mb-3">
             <label for="title" class="form-label">Titulo</label>
             <input id="title" type="text" placeholder="Título" class="form-control"
