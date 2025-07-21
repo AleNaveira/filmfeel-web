@@ -126,7 +126,7 @@ public class FilmController {
 
     @PostMapping("/nueva-pelicula")
     ModelAndView createFilm(@Validated Film film, BindingResult bindingResult) {
-    logger.info("Intentando crear nueva película : {}", film.getTitle());
+        logger.info("Intentando crear nueva película : {}", film.getTitle());
         if (bindingResult.hasErrors() || film.getPortada().isEmpty()) {
 
             if (film.getPortada().isEmpty()) {
@@ -218,7 +218,13 @@ public class FilmController {
 
 
         return new ModelAndView("/edit-film")
-                .addObject("film", film);
+                .addObject("film", film)
+                .addObject("actors", personServiceImpl.findByTypePerson(TypePersonEnum.ACTOR))
+                .addObject("filmsMusicians", personServiceImpl.findByTypePerson(TypePersonEnum.MUSICO))
+                .addObject("scriptwriters", personServiceImpl.findByTypePerson(TypePersonEnum.GUIONISTA))
+                .addObject("directors", personServiceImpl.findByTypePerson(TypePersonEnum.DIRECTOR))
+                .addObject("photographer", personServiceImpl.findByTypePerson(TypePersonEnum.FOTOGRAFO));
+
 
     }
 
@@ -250,7 +256,7 @@ public class FilmController {
             storageService.delete(peliculaFromDb.getPosterRoute());
             String posterRoute = storageService.storage(film.getPortada());
             peliculaFromDb.setPosterRoute(posterRoute);
-            logger.info("Portada actualizada para la pelicula con ID: {}",id);
+            logger.info("Portada actualizada para la pelicula con ID: {}", id);
 
 
         }
@@ -269,7 +275,7 @@ public class FilmController {
 
     @Transactional
     String deleteFilm(@PathVariable Long id) {
-        logger.info("Eliminando la película con ID: {}",id);
+        logger.info("Eliminando la película con ID: {}", id);
 
 
         Film film = filmRepository.getReferenceById(id);
