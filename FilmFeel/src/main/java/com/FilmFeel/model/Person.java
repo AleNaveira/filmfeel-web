@@ -45,5 +45,10 @@ public class Person {
     @ManyToMany(mappedBy = "actors")
     private List<Film> filmsActors;
 
+    @Override
+    public String toString() {
+        return name + " " + surname;
+    }
+
 }
 

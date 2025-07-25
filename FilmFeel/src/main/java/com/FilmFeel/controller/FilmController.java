@@ -223,7 +223,12 @@ public class FilmController {
                 .addObject("filmsMusicians", personServiceImpl.findByTypePerson(TypePersonEnum.MUSICO))
                 .addObject("scriptwriters", personServiceImpl.findByTypePerson(TypePersonEnum.GUIONISTA))
                 .addObject("directors", personServiceImpl.findByTypePerson(TypePersonEnum.DIRECTOR))
-                .addObject("photographer", personServiceImpl.findByTypePerson(TypePersonEnum.FOTOGRAFO));
+                .addObject("photographer", personServiceImpl.findByTypePerson(TypePersonEnum.FOTOGRAFO))
+                .addObject("selectedActors", film.getActors())
+                .addObject("selectedMusicians", film.getFilmsMusicians())
+                .addObject("selectedScriptwriters", film.getScriptwriters())
+                .addObject("selectedDirectors", film.getDirectors())
+                .addObject("selectedPhotographers", film.getPhotographer());
 
 
     }
