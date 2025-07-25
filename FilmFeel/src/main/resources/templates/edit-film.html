@@ -92,7 +92,7 @@
         <div class="mb-3">
             <label for="musicians" class="form-label">Músicos</label>
             <select class="form-control select2" id="musicians" th:field="*{filmsMusicians}" multiple>
-                <option th:each="musician : ${musicians}" th:value="${musician.id}"
+                <option th:each="musician : ${filmMusicians}" th:value="${musician.id}"
                         th:text="${musician.name} + ' ' + ${musician.surname}"
                         th:selected="${selectedMusicians != null and #lists.contains(selectedMusicians, musician)}"></option>
             </select>
@@ -108,7 +108,7 @@
         <div class="mb-3">
             <label for="photographer" class="form-label">Fotógrafo</label>
             <select class="form-control select2" id="photographer" th:field="*{photographer} " multiple>
-                <option th:each="photographer : ${photographers}" th:value="${photographer.id}"
+                <option th:each="photographer : ${photographer}" th:value="${photographer.id}"
                         th:text="${photographer.name}+ ' ' + ${photographer.surname}" th:selected="${selectedPhotographers != null and #lists.contains(selectedPhotographers, photographer)}"></option>
             </select>
         </div>

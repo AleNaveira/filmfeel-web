@@ -220,7 +220,7 @@ public class FilmController {
         return new ModelAndView("/edit-film")
                 .addObject("film", film)
                 .addObject("actors", personServiceImpl.findByTypePerson(TypePersonEnum.ACTOR))
-                .addObject("filmsMusicians", personServiceImpl.findByTypePerson(TypePersonEnum.MUSICO))
+                .addObject("filmMusicians", personServiceImpl.findByTypePerson(TypePersonEnum.MUSICO))
                 .addObject("scriptwriters", personServiceImpl.findByTypePerson(TypePersonEnum.GUIONISTA))
                 .addObject("directors", personServiceImpl.findByTypePerson(TypePersonEnum.DIRECTOR))
                 .addObject("photographer", personServiceImpl.findByTypePerson(TypePersonEnum.FOTOGRAFO))
