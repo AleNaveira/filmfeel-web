@@ -1,0 +1,455 @@
+2025-07-09 13:45:00.056367+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 13:50:00.014472+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 13:55:00.015110+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:00:00.018535+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:05:00.012396+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:10:00.011117+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:15:00.008520+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:20:00.016394+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:25:00.011778+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:30:00.015844+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:35:00.017803+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:40:00.018528+02:00 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:45:00.014186+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:50:00.015650+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 14:55:00.013494+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 15:00:00.007533+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 15:05:00.820290+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 15:10:00.017340+02:00 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 15:15:00.011809+02:00 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 17:54:01.057544+02:00 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 17:55:00.016524+02:00 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 18:00:00.007377+02:00 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 18:11:10.032514+02:00 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 18:20:46.838406+02:00 jdbc[53]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 18:25:00.004782+02:00 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 18:36:11.298643+02:00 jdbc[63]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 20:54:02.213339+02:00 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 20:55:00.009172+02:00 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 21:00:00.034594+02:00 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 21:05:00.012935+02:00 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 21:10:00.034843+02:00 jdbc[73]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 22:46:46.377302+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 22:50:00.013787+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 22:57:32.160350+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:00:00.035388+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:05:00.014557+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:10:00.006006+02:00 jdbc[93]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:15:00.011185+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:20:00.015844+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:25:00.027616+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:30:00.006353+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:35:00.010868+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:40:00.021401+02:00 jdbc[103]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:45:00.013070+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:50:00.019099+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-09 23:58:34.982424+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:00:00.014167+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:05:00.015065+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:10:00.022955+02:00 jdbc[113]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:17:53.985955+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:20:00.014957+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:25:00.018363+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:30:00.022946+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:35:00.009612+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:40:00.004004+02:00 jdbc[123]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:45:00.014998+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:50:00.027075+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 00:58:52.089299+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:00:00.026375+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:05:00.022613+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:10:00.012053+02:00 jdbc[133]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:15:00.025830+02:00 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:20:00.034135+02:00 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:25:00.021359+02:00 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+2025-07-10 01:30:00.011563+02:00 jdbc[143]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]

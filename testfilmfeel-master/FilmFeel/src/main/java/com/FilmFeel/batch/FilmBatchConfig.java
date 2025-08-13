@@ -1,6 +1,6 @@
 package com.FilmFeel.batch;
 
-
+import jakarta.annotation.PostConstruct;
 import lombok.RequiredArgsConstructor;
 import org.springframework.batch.core.Job;
 import org.springframework.batch.core.Step;
@@ -31,26 +31,45 @@ public class FilmBatchConfig {
     private final DataSource dataSource;
     private final JobRepository jobRepository;
     private final PlatformTransactionManager txManager;
-    private final FilmJobListener jobListener;
-    private final FilmItemWriteListener writeListener;
+
+    // Listeners
+    private final FilmJobListener jobListener;          // de JOB
+    private final FilmStepListener stepListener;        // de STEP
+    private final FilmItemWriteListener writeListener;  // de ITEM (write)
 
     @Bean
     public JdbcPagingItemReader<FilmDTO> filmReader() throws Exception {
         SqlPagingQueryProviderFactoryBean factory = new SqlPagingQueryProviderFactoryBean();
         factory.setDataSource(dataSource);
+
         factory.setSelectClause(
                 "SELECT film_id AS id, film_title AS title, film_year AS year," +
-                        " film_duration AS duration, film_synopsis AS synopsis, poster_route AS posterRoute"
+                        " film_duration AS duration, film_synopsis AS synopsis, " +
+                        " film_poster_route AS posterRoute"   // ← aquí
         );
+
+
+
+
         factory.setFromClause("FROM film");
         factory.setWhereClause("WHERE migrate = FALSE");
         factory.setSortKey("film_id");
-        var provider = factory.getObject();
+
+        var queryProvider = factory.getObject();
+
+        System.out.println("📄 SQL que se ejecutará: " +
+                queryProvider.generateFirstPageQuery(50)); // Primera página
+        System.out.println("📄 SQL siguiente página: " +
+                queryProvider.generateRemainingPagesQuery(50)); // Resto
+// 🔍 Verificar la conexión que ve el reader
+        try (var c = dataSource.getConnection()) {
+            System.out.println("🔍 URL vista por el reader: " + c.getMetaData().getURL());
+        }
 
         return new JdbcPagingItemReaderBuilder<FilmDTO>()
                 .name("filmReader")
                 .dataSource(dataSource)
-                .queryProvider(provider)
+                .queryProvider(factory.getObject())
                 .pageSize(50)
                 .rowMapper(new FilmRowMapper())
                 .build();
@@ -75,20 +94,53 @@ public class FilmBatchConfig {
 
     @Bean
     public Step exportFilmsStep(FlatFileItemWriter<FilmDTO> fileWriter) throws Exception {
+        System.out.println("📦 Creando Step exportFilmsStep");
         return new StepBuilder("exportFilmsStep", jobRepository)
                 .<FilmDTO, FilmDTO>chunk(50, txManager)
                 .reader(filmReader())
                 .writer(fileWriter)
-                .listener(jobListener)
-                .listener(writeListener)
+                .listener(stepListener)     // ✅ listener de STEP
+                .listener(writeListener)    // ✅ listener de write
                 .build();
     }
 
-    @Bean(name = "filmMigrationJob")
-    public Job exportFilmsJob() throws Exception {
+    @Bean(name = "exportFilmsJob") // ✅ coincide con @Qualifier del scheduler
+    public Job exportFilmsJob(FlatFileItemWriter<FilmDTO> fileWriter) throws Exception {
+        System.out.println("🎯 Creando Job exportFilmsJob");
         return new JobBuilder("exportFilmsJob", jobRepository)
                 .incrementer(new RunIdIncrementer())
-                .start(exportFilmsStep(fileWriter(null)))  // ⚠️ No modificar esta línea, Spring la gestiona
+                .listener(jobListener)                 // ✅ listener de JOB
+                .start(exportFilmsStep(fileWriter))
                 .build();
     }
+
+    @PostConstruct
+    public void checkDb() throws Exception {
+        try (var c = dataSource.getConnection()) {
+            System.out.println("🔌 H2 URL usada por la APP: " + c.getMetaData().getURL());
+
+            try (var st = c.createStatement();
+                 var rs = st.executeQuery("SELECT COUNT(*) FROM film WHERE migrate = FALSE")) {
+                rs.next();
+                System.out.println("🔢 Pendientes (vistas por la APP): " + rs.getInt(1));
+            }
+
+            // 🔍 Listar todas las películas para ver sus valores
+            try (var st = c.createStatement();
+                 var rs = st.executeQuery("SELECT film_id, film_title, migrate FROM film")) {
+                while (rs.next()) {
+                    System.out.println("🎬 Film ID=" + rs.getInt("film_id")
+                            + " | title=" + rs.getString("film_title")
+                            + " | migrate=" + rs.getString("migrate"));
+                }
+            }
+        }
+    }
+
+
+
+
 }
+
+
+

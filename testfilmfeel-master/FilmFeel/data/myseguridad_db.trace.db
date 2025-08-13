@@ -1,0 +1,7 @@
+2025-08-12 12:45:00.052808+02:00 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]

@@ -18,10 +18,9 @@ public class FilmStepListener {
 
     @AfterStep
     public ExitStatus afterStep(StepExecution stepExecution) {
-        log.info("▶Fin de Step “{}” – readCount={} writeCount={}",
-                stepExecution.getStepName(),
-                stepExecution.getReadCount(),
-                stepExecution.getWriteCount());
+        System.out.println("📊 ReadCount=" + stepExecution.getReadCount());
+        System.out.println("📊 WriteCount=" + stepExecution.getWriteCount());
+        System.out.println("📊 ExitStatus=" + stepExecution.getExitStatus());
         return stepExecution.getExitStatus();
     }
 }
