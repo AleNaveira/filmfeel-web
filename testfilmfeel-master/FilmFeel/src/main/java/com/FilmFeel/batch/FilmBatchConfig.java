@@ -18,10 +18,17 @@ import org.springframework.batch.item.file.builder.FlatFileItemWriterBuilder;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.core.io.FileSystemResource;
+import org.springframework.jdbc.datasource.init.DataSourceInitializer;
+import org.springframework.jdbc.datasource.init.ResourceDatabasePopulator;
 import org.springframework.transaction.PlatformTransactionManager;
 
 import javax.sql.DataSource;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 
 @Configuration
 @EnableBatchProcessing
@@ -43,9 +50,12 @@ public class FilmBatchConfig {
         factory.setDataSource(dataSource);
 
         factory.setSelectClause(
-                "SELECT film_id AS id, film_title AS title, film_year AS year," +
-                        " film_duration AS duration, film_synopsis AS synopsis, " +
-                        " film_poster_route AS posterRoute"   // ← aquí
+                "SELECT film_id AS id, " +
+                        "       film_title AS title, " +
+                        "       film_year AS \"year\", " +   // 👈 alias entre comillas
+                        "       film_duration AS duration, " +
+                        "       film_synopsis AS synopsis, " +
+                        "       film_poster_route AS posterRoute"
         );
 
 
@@ -77,9 +87,10 @@ public class FilmBatchConfig {
 
     @Bean
     @StepScope
-    public FlatFileItemWriter<FilmDTO> fileWriter(
-            @Value("#{jobParameters['outputFile']}") String outputFile
-    ) {
+    public FlatFileItemWriter<FilmDTO> fileWriter(@Value("#{jobParameters['outputFile']}") String outputFile
+    ) throws IOException {
+        Path p = Paths.get(outputFile).toAbsolutePath();
+        Files.createDirectories(p.getParent()); // ✅ asegura que la carpeta exista
         return new FlatFileItemWriterBuilder<FilmDTO>()
                 .name("fileWriter")
                 .resource(new FileSystemResource(outputFile))
@@ -112,6 +123,16 @@ public class FilmBatchConfig {
                 .listener(jobListener)                 // ✅ listener de JOB
                 .start(exportFilmsStep(fileWriter))
                 .build();
+    }
+
+    @Bean
+    DataSourceInitializer batchSchemaInitializer(DataSource dataSource) {
+        var populator = new ResourceDatabasePopulator();
+        populator.addScript(new ClassPathResource("org/springframework/batch/core/schema-h2.sql"));
+        var initializer = new DataSourceInitializer();
+        initializer.setDataSource(dataSource);
+        initializer.setDatabasePopulator(populator);
+        return initializer;
     }
 
     @PostConstruct
