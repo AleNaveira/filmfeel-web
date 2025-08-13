@@ -3,3 +3,18 @@
 2025-08-13 12:36:20 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Imagen subida correctamente
 2025-08-13 12:36:21 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Usuario registrado exitosamente : aa
 2025-08-13 12:36:21 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 12:54:25 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de registro
+2025-08-13 12:54:46 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Intentando registrar usuario : aa
+2025-08-13 12:54:46 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Imagen subida correctamente
+2025-08-13 12:54:46 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Usuario registrado exitosamente : aa
+2025-08-13 12:54:46 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 12:54:51 [http-nio-8060-exec-8] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 13:05:49 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de registro
+2025-08-13 13:09:33 [http-nio-8060-exec-5] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 13:09:38 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 13:09:43 [http-nio-8060-exec-9] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login
+2025-08-13 13:09:45 [http-nio-8060-exec-6] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de registro
+2025-08-13 13:10:12 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.AuthController - Intentando registrar usuario : aa
+2025-08-13 13:10:12 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.AuthController - Imagen subida correctamente
+2025-08-13 13:10:12 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.AuthController - Usuario registrado exitosamente : aa
+2025-08-13 13:10:12 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login

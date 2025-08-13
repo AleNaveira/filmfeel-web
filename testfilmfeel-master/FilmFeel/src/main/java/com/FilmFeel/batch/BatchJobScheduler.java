@@ -34,7 +34,8 @@ public class BatchJobScheduler {
     }
 
 
-    @Scheduled(cron = "0 */5 * * * *")
+
+    @Scheduled(cron = "0 0 2 * * *", zone = "Europe/Madrid")
     public void launchJob() throws Exception {
         System.out.println("Intentando lanzar el batch...");
         // 👇 DATO CLAVE: lo que la APP ve AHORA MISMO
