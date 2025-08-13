@@ -1,0 +1,5 @@
+2025-08-13 12:36:28 [http-nio-8060-exec-10] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : beautiful boy
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Se encontraron 1 películas

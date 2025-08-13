@@ -51,28 +51,32 @@ public class BatchJobScheduler {
                 .toJobParameters();
         System.out.println("Params generados: " + params);
 
+try {
+    var execution = jobLauncher.run(filmMigrationJob, params);
+    // 🔍 Depuración: mostrar estado
+    System.out.println("Estado inicial del job: " + execution.getStatus());
+    execution.getStepExecutions().forEach(stepExec ->
+            System.out.println("Step: " + stepExec.getStepName() +
+                    " | ReadCount=" + stepExec.getReadCount() +
+                    " | WriteCount=" + stepExec.getWriteCount())
+    );
 
-        var execution = jobLauncher.run(filmMigrationJob, params);
-        // 🔍 Depuración: mostrar estado
-        System.out.println("Estado inicial del job: " + execution.getStatus());
-        execution.getStepExecutions().forEach(stepExec ->
-                System.out.println("Step: " + stepExec.getStepName() +
-                        " | ReadCount=" + stepExec.getReadCount() +
-                        " | WriteCount=" + stepExec.getWriteCount())
-        );
+    System.out.println("Estado del job: " + execution.getStatus());
+    execution.getStepExecutions().forEach(se -> System.out.println(
+            "Step " + se.getStepName() +
+                    " read=" + se.getReadCount() +
+                    " write=" + se.getWriteCount() +
+                    " status=" + se.getStatus()
+    ));
 
-        System.out.println("Estado del job: " + execution.getStatus());
-        execution.getStepExecutions().forEach(se -> System.out.println(
-                "Step " + se.getStepName() +
-                        " read=" + se.getReadCount() +
-                        " write=" + se.getWriteCount() +
-                        " status=" + se.getStatus()
-        ));
-
-        // 👇 imprime cualquier excepción del job o del step (mapper, writer, etc.)
-        if (!execution.getAllFailureExceptions().isEmpty()) {
-            System.out.println("❌ Excepciones del job:");
-            execution.getAllFailureExceptions().forEach(Throwable::printStackTrace);
-        }
+    // 👇 imprime cualquier excepción del job o del step (mapper, writer, etc.)
+    if (!execution.getAllFailureExceptions().isEmpty()) {
+        System.out.println("❌ Excepciones del job:");
+        execution.getAllFailureExceptions().forEach(Throwable::printStackTrace);
+    }
+}catch (Exception e){
+    System.out.println("❌ Falló el run del job:");
+    e.printStackTrace();
+}
     }
 }

@@ -1,0 +1,5 @@
+2025-08-13 12:35:51 [http-nio-8060-exec-3] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de registro
+2025-08-13 12:36:20 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Intentando registrar usuario : aa
+2025-08-13 12:36:20 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Imagen subida correctamente
+2025-08-13 12:36:21 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Usuario registrado exitosamente : aa
+2025-08-13 12:36:21 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.AuthController - Acceso al formulario de login

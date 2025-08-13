@@ -1,0 +1,1071 @@
+2025-08-13 12:29:32 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:29:32 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 32292 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:29:32 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:29:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:29:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 5 ms.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 68 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:29:34 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 51 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:29:35 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:29:36 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:29:36 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:29:36 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:29:36 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:29:36 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:29:36 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3727 ms
+2025-08-13 12:29:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:29:36 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:29:36 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:29:36 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:29:37 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:29:37 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:29:37 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:29:37 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:29:37 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:29:38 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:29:38 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:29:38 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:29:39 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:29:39 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:29:39 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:29:40 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:29:41 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:29:41 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:29:41 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@4f94fd99, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7c124d9c, org.springframework.security.web.context.SecurityContextHolderFilter@719bf5b0, org.springframework.security.web.header.HeaderWriterFilter@6557c250, org.springframework.web.filter.CorsFilter@24a71908, org.springframework.security.web.authentication.logout.LogoutFilter@77a553b9, com.FilmFeel.jwt.JwtValidator@63c6cc87, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@311a6f1e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5f2b7be, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@b568d53, org.springframework.security.web.session.SessionManagementFilter@69715399, org.springframework.security.web.access.ExceptionTranslationFilter@6359c7b6, org.springframework.security.web.access.intercept.AuthorizationFilter@2df93284]
+2025-08-13 12:29:41 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2af45704, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@16040d21, org.springframework.security.web.context.SecurityContextHolderFilter@37a0d44a, org.springframework.security.web.header.HeaderWriterFilter@297df82a, org.springframework.web.filter.CorsFilter@692686db, org.springframework.security.web.csrf.CsrfFilter@422cdac, org.springframework.security.web.authentication.logout.LogoutFilter@3a5863c3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5c882f38, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@76e0c8b6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4d11f950, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6bc9f996, org.springframework.security.web.access.ExceptionTranslationFilter@3b200d4f, org.springframework.security.web.access.intercept.AuthorizationFilter@814123e]
+2025-08-13 12:29:41 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:29:42 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:29:42 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:29:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:29:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:29:42 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 11.055 seconds (process running for 11.788)
+2025-08-13 12:29:56 [http-nio-8060-exec-6] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-13 12:29:56 [http-nio-8060-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 12:29:56 [http-nio-8060-exec-6] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2025-08-13 12:29:56 [http-nio-8060-exec-6] INFO  c.FilmFeel.controller.HomeController - Accediendo a la página de inicio
+2025-08-13 12:29:56 [http-nio-8060-exec-6] INFO  c.FilmFeel.controller.HomeController - Se cargaron las últimas 0 películas para la página de inicio
+2025-08-13 12:29:57 [http-nio-8060-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-6][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template home_index, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:29:57 [http-nio-8060-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-6][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template home_index, line 23, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:29:57 [http-nio-8060-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-6][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template home_index, line 92, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:29:57 [http-nio-8060-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-6][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template home_index, line 108, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:30:00 [scheduling-1] ERROR o.s.s.s.TaskUtils$LoggingErrorHandler - Unexpected error occurred in scheduled task
+org.springframework.jdbc.BadSqlGrammarException: PreparedStatementCallback; bad SQL grammar [SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ?]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:677)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:723)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:754)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:767)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:825)
+	at org.springframework.batch.core.repository.dao.JdbcJobInstanceDao.getJobInstance(JdbcJobInstanceDao.java:183)
+	at org.springframework.batch.core.repository.support.SimpleJobRepository.getLastJobExecution(SimpleJobRepository.java:299)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:354)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:196)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:163)
+	at org.springframework.transaction.interceptor.TransactionInterceptor$1.proceedWithInvocation(TransactionInterceptor.java:123)
+	at org.springframework.transaction.interceptor.TransactionAspectSupport.invokeWithinTransaction(TransactionAspectSupport.java:392)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:184)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:223)
+	at jdk.proxy2/jdk.proxy2.$Proxy157.getLastJobExecution(Unknown Source)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:111)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Tabla "BATCH_JOB_INSTANCE" no encontrada
+Table "BATCH_JOB_INSTANCE" not found; SQL statement:
+SELECT JOB_INSTANCE_ID, JOB_NAME
+FROM BATCH_JOB_INSTANCE
+WHERE JOB_NAME = ?
+ and JOB_KEY = ? [42102-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.get(DbException.java:223)
+	at org.h2.message.DbException.get(DbException.java:199)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8064)
+	at org.h2.command.Parser.getTableOrViewNotFoundDbException(Parser.java:8035)
+	at org.h2.command.Parser.readTableOrView(Parser.java:8024)
+	at org.h2.command.Parser.readTablePrimary(Parser.java:1788)
+	at org.h2.command.Parser.readTableReference(Parser.java:2268)
+	at org.h2.command.Parser.parseSelectFromPart(Parser.java:2718)
+	at org.h2.command.Parser.parseSelect(Parser.java:2824)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcPreparedStatement.<init>(JdbcPreparedStatement.java:93)
+	at org.h2.jdbc.JdbcConnection.prepareStatement(JdbcConnection.java:316)
+	at com.zaxxer.hikari.pool.ProxyConnection.prepareStatement(ProxyConnection.java:327)
+	at com.zaxxer.hikari.pool.HikariProxyConnection.prepareStatement(HikariProxyConnection.java)
+	at org.springframework.jdbc.core.JdbcTemplate$SimplePreparedStatementCreator.createPreparedStatement(JdbcTemplate.java:1711)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:656)
+	... 34 common frames omitted
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:33:22 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:33:28 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:33:29 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 29324 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:33:29 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:33:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:33:29 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:33:30 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 5 ms.
+2025-08-13 12:33:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:33:30 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 66 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:33:31 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 58 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:33:31 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:33:32 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:33:32 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:33:32 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:33:32 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:33:32 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:33:32 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3319 ms
+2025-08-13 12:33:32 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:33:33 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:33:33 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:33:33 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:33:33 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:33:33 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:33:33 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:33:33 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:33:33 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:33:34 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:33:34 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:33:35 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:33:35 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:33:36 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:33:36 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:33:36 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:33:37 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:33:37 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:33:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@debe111, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5e37bfdc, org.springframework.security.web.context.SecurityContextHolderFilter@666eeed8, org.springframework.security.web.header.HeaderWriterFilter@18d8a55c, org.springframework.web.filter.CorsFilter@4c1ee0cd, org.springframework.security.web.authentication.logout.LogoutFilter@38c98367, com.FilmFeel.jwt.JwtValidator@48783448, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@641eee92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3aca228b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1a49a73f, org.springframework.security.web.session.SessionManagementFilter@349afecf, org.springframework.security.web.access.ExceptionTranslationFilter@7c2036e3, org.springframework.security.web.access.intercept.AuthorizationFilter@221a9b08]
+2025-08-13 12:33:37 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@54b8f7ab, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7a55a209, org.springframework.security.web.context.SecurityContextHolderFilter@4bea5588, org.springframework.security.web.header.HeaderWriterFilter@64b5e0a8, org.springframework.web.filter.CorsFilter@39441347, org.springframework.security.web.csrf.CsrfFilter@7e41a3aa, org.springframework.security.web.authentication.logout.LogoutFilter@20137b83, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4f86f31, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@370008c6, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@72373169, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e9bef84, org.springframework.security.web.access.ExceptionTranslationFilter@179a5d02, org.springframework.security.web.access.intercept.AuthorizationFilter@5c15c683]
+2025-08-13 12:33:37 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:33:38 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:33:38 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:33:38 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:33:38 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:33:38 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 10.465 seconds (process running for 11.046)
+2025-08-13 12:34:24 [http-nio-8060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-13 12:34:24 [http-nio-8060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 12:34:24 [http-nio-8060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3 ms
+2025-08-13 12:34:24 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Accediendo a la página de inicio
+2025-08-13 12:34:24 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Se cargaron las últimas 0 películas para la página de inicio
+2025-08-13 12:34:24 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template home_index, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:34:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template home_index, line 23, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:34:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template home_index, line 92, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:34:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template home_index, line 108, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:35:51 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][register-form] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template register-form, line 6, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:35:51 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][register-form] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template register-form, line 109, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:35:51 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][register-form] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template register-form, line 133, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:21 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template login-form, line 13, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:21 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template login-form, line 22, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:21 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template login-form, line 59, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:21 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template login-form, line 82, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:25 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Accediendo a la página de inicio
+2025-08-13 12:36:25 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Se cargaron las últimas 0 películas para la página de inicio
+2025-08-13 12:36:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template home_index, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template home_index, line 23, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template home_index, line 92, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:25 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template home_index, line 108, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:25 [http-nio-8060-exec-4] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:36:28 [http-nio-8060-exec-10] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-10][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template new-film, line 9, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:28 [http-nio-8060-exec-10] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-10][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template new-film, line 15, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:28 [http-nio-8060-exec-10] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-10][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template new-film, line 125, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:28 [http-nio-8060-exec-10] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-10][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template new-film, line 148, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:28 [http-nio-8060-exec-1] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:36:43 [http-nio-8060-exec-4] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-4][films] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template films, line 7, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:43 [http-nio-8060-exec-4] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-4][films] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template films, line 18, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:43 [http-nio-8060-exec-4] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-4][films] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template films, line 151, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:36:43 [http-nio-8060-exec-5] INFO  c.F.controller.AssetController - Solicitud de recurso: BEAUTIFULBOY.jpg
+2025-08-13 12:36:43 [http-nio-8060-exec-8] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:42:39 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:42:44 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:42:44 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 29164 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:42:44 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:42:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:42:45 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 9 ms.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:42:46 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 56 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:42:47 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:42:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:42:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:42:48 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:42:48 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:42:48 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:42:48 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3379 ms
+2025-08-13 12:42:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:42:48 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:42:48 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:42:48 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:42:49 [restartedMain] WARN  o.a.c.c.C.[Tomcat].[localhost].[/] - Cannot deserialize session attribute [SPRING_SECURITY_CONTEXT] for session [3147D585B132CE255AAD72E027BEC8E5]
+2025-08-13 12:42:49 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:42:49 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:42:49 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:42:49 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:42:49 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:42:51 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:42:51 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:42:51 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:42:51 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:42:52 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:42:52 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:42:53 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:42:53 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:42:53 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:42:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@7b798eaf, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@660b0127, org.springframework.security.web.context.SecurityContextHolderFilter@7c124d9c, org.springframework.security.web.header.HeaderWriterFilter@25e2aee7, org.springframework.web.filter.CorsFilter@72162fa0, org.springframework.security.web.authentication.logout.LogoutFilter@1111e267, com.FilmFeel.jwt.JwtValidator@2d70b486, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@65464f08, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1341107a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1acb5b71, org.springframework.security.web.session.SessionManagementFilter@2df93284, org.springframework.security.web.access.ExceptionTranslationFilter@73d8b187, org.springframework.security.web.access.intercept.AuthorizationFilter@4f420773]
+2025-08-13 12:42:53 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@53f60d02, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@38ebac14, org.springframework.security.web.context.SecurityContextHolderFilter@da8fb7d, org.springframework.security.web.header.HeaderWriterFilter@70340f1f, org.springframework.web.filter.CorsFilter@fc7c046, org.springframework.security.web.csrf.CsrfFilter@3c394ae1, org.springframework.security.web.authentication.logout.LogoutFilter@6d5aa6e8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@31520ac3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10af29fa, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@77ff776d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@31362095, org.springframework.security.web.access.ExceptionTranslationFilter@62c3379, org.springframework.security.web.access.intercept.AuthorizationFilter@89bf9b8]
+2025-08-13 12:42:54 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:42:54 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:42:54 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:42:54 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:42:54 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:42:54 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 10.878 seconds (process running for 11.473)
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:43:10 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:43:12 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:43:13 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 12716 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:43:13 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:43:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:43:13 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 4 ms.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:43:14 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 65 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:43:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:43:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:43:15 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 59 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:43:15 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:43:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:43:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:43:16 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:43:16 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:43:16 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:43:16 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3402 ms
+2025-08-13 12:43:16 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:43:17 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:43:17 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:43:17 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:43:17 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:43:17 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:43:17 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:43:17 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:43:17 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:43:18 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:43:18 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql]
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('USER')
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('ADMIN')
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO users ( user_username, user_password, user_active, user_name, user_surname, user_email ) SELECT 'admin', '$2a$12$3G7Lpe9nXRfKjktweeD/uulTJIgV3jOe9zA58NGKprLzqYp2w/okG', true, 'administrador', 'principal', 'administrador@filmfeel.com' WHERE NOT EXISTS (SELECT 1 FROM users WHERE user_username = 'admin')
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO user_roles (user_id, role_id) SELECT u.user_id, r.id FROM users u, roles r WHERE u.user_username = 'admin' AND r.name = 'ADMIN' AND NOT EXISTS ( SELECT 1 FROM user_roles WHERE user_id = u.user_id AND role_id = r.id )
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql] in 13 ms.
+2025-08-13 12:43:19 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:43:19 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:43:19 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: exportFilmsJob
+2025-08-13 12:43:19 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:43:19 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:43:20 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:43:20 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:43:21 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:43:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f70fcdc, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1154ea3, org.springframework.security.web.context.SecurityContextHolderFilter@5b0be556, org.springframework.security.web.header.HeaderWriterFilter@7697e78c, org.springframework.web.filter.CorsFilter@a94a01a, org.springframework.security.web.authentication.logout.LogoutFilter@723226ca, com.FilmFeel.jwt.JwtValidator@5ea52a04, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e5fca19, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3ed92bab, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@660bbb10, org.springframework.security.web.session.SessionManagementFilter@2e3d1cde, org.springframework.security.web.access.ExceptionTranslationFilter@46118fc8, org.springframework.security.web.access.intercept.AuthorizationFilter@26adc03c]
+2025-08-13 12:43:21 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5f1d57c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@25803f58, org.springframework.security.web.context.SecurityContextHolderFilter@5d69c09b, org.springframework.security.web.header.HeaderWriterFilter@115a8b55, org.springframework.web.filter.CorsFilter@2e73518c, org.springframework.security.web.csrf.CsrfFilter@1c00e308, org.springframework.security.web.authentication.logout.LogoutFilter@3bb74f98, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@234aa3ad, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2e1b59ba, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d8c11c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5feee453, org.springframework.security.web.access.ExceptionTranslationFilter@ad931a5, org.springframework.security.web.access.intercept.AuthorizationFilter@421a35d3]
+2025-08-13 12:43:21 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:43:22 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:43:22 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:43:22 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:43:22 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:43:22 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 10.362 seconds (process running for 10.946)
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:45:01 [SpringApplicationShutdownHook] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Unregistering job: exportFilmsJob
+2025-08-13 12:45:06 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:45:06 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 3852 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:45:06 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:45:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:45:06 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 6 ms.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 53 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:45:08 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 55 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:45:09 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:45:10 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:45:10 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:45:10 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:45:10 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:45:10 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:45:10 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3369 ms
+2025-08-13 12:45:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:45:10 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:45:10 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:45:10 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:45:11 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:45:11 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:45:11 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:45:11 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:45:11 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:45:12 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:45:12 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql]
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('USER')
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('ADMIN')
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO users ( user_username, user_password, user_active, user_name, user_surname, user_email ) SELECT 'admin', '$2a$12$3G7Lpe9nXRfKjktweeD/uulTJIgV3jOe9zA58NGKprLzqYp2w/okG', true, 'administrador', 'principal', 'administrador@filmfeel.com' WHERE NOT EXISTS (SELECT 1 FROM users WHERE user_username = 'admin')
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO user_roles (user_id, role_id) SELECT u.user_id, r.id FROM users u, roles r WHERE u.user_username = 'admin' AND r.name = 'ADMIN' AND NOT EXISTS ( SELECT 1 FROM user_roles WHERE user_id = u.user_id AND role_id = r.id )
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql] in 18 ms.
+2025-08-13 12:45:12 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:45:12 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:45:12 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: exportFilmsJob
+2025-08-13 12:45:13 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:45:13 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_INSTANCE ( JOB_INSTANCE_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_NAME VARCHAR(100) NOT NULL, JOB_KEY VARCHAR(32) NOT NULL, constraint JOB_INST_UN unique (JOB_NAME, JOB_KEY) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION ( JOB_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_INSTANCE_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_INST_EXEC_FK foreign key (JOB_INSTANCE_ID) references BATCH_JOB_INSTANCE(JOB_INSTANCE_ID) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_PARAMS ( JOB_EXECUTION_ID BIGINT NOT NULL , PARAMETER_NAME VARCHAR(100) NOT NULL , PARAMETER_TYPE VARCHAR(100) NOT NULL , PARAMETER_VALUE VARCHAR(2500) , IDENTIFYING CHAR(1) NOT NULL , constraint JOB_EXEC_PARAMS_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION ( STEP_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT NOT NULL, STEP_NAME VARCHAR(100) NOT NULL, JOB_EXECUTION_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , COMMIT_COUNT BIGINT , READ_COUNT BIGINT , FILTER_COUNT BIGINT , WRITE_COUNT BIGINT , READ_SKIP_COUNT BIGINT , WRITE_SKIP_COUNT BIGINT , PROCESS_SKIP_COUNT BIGINT , ROLLBACK_COUNT BIGINT , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_EXEC_STEP_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION_CONTEXT ( STEP_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint STEP_EXEC_CTX_FK foreign key (STEP_EXECUTION_ID) references BATCH_STEP_EXECUTION(STEP_EXECUTION_ID) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_CONTEXT ( JOB_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint JOB_EXEC_CTX_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_STEP_EXECUTION_SEQ
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_EXECUTION_SEQ
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_SEQ
+2025-08-13 12:45:14 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 9 ms.
+2025-08-13 12:45:14 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:45:14 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:45:15 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:45:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@1f95a248, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@52e1c05b, org.springframework.security.web.context.SecurityContextHolderFilter@7827db06, org.springframework.security.web.header.HeaderWriterFilter@3f3e8084, org.springframework.web.filter.CorsFilter@5aa7f1bd, org.springframework.security.web.authentication.logout.LogoutFilter@26c47b9, com.FilmFeel.jwt.JwtValidator@3a184818, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@22139949, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@25f1fdfc, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@8ad2af1, org.springframework.security.web.session.SessionManagementFilter@1920d20b, org.springframework.security.web.access.ExceptionTranslationFilter@4f200cf, org.springframework.security.web.access.intercept.AuthorizationFilter@c89ed07]
+2025-08-13 12:45:15 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@252cf4c0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5f9788d7, org.springframework.security.web.context.SecurityContextHolderFilter@7195d48a, org.springframework.security.web.header.HeaderWriterFilter@291c4014, org.springframework.web.filter.CorsFilter@33d3544d, org.springframework.security.web.csrf.CsrfFilter@52dfdee, org.springframework.security.web.authentication.logout.LogoutFilter@5138fea1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@724b405a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@26ee2972, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4501be31, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@797444d3, org.springframework.security.web.access.ExceptionTranslationFilter@43340711, org.springframework.security.web.access.intercept.AuthorizationFilter@4ef23e83]
+2025-08-13 12:45:15 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:45:15 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:45:16 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:45:16 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:45:16 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:45:16 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 10.423 seconds (process running for 11.023)
+2025-08-13 12:50:00 [scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exportFilmsJob]] launched with the following parameters: [{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082200044, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2025-08-13T12:50:00.071113400, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[exportFilmsJob]], jobParameters=[{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082200044, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:50:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmJobListener -  Pendientes de migrar: 0
+2025-08-13 12:50:00 [scheduling-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [exportFilmsStep]
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.step.AbstractStep - Executing: id=1
+2025-08-13 12:50:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmStepListener -  Iniciando Step “exportFilmsStep”
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.scope.StepScope - Creating object in scope=step, name=scopedTarget.fileWriter
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.scope.StepScope - Registered destruction callback in scope=step, name=scopedTarget.fileWriter
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@5bf44948
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Chunk execution starting: queue size=0
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.c.s.item.SimpleChunkProvider - StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY] : org.springframework.jdbc.BadSqlGrammarException
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.core.step.tasklet.TaskletStep - Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.core.step.tasklet.TaskletStep - Rollback for RuntimeException: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+2025-08-13 12:50:00 [scheduling-1] ERROR o.s.batch.core.step.AbstractStep - Encountered an error executing step exportFilmsStep in job exportFilmsJob
+org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:486)
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:199)
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:115)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:182)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; expected "identifier"; SQL statement:
+SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5533)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2801)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:463)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	... 46 common frames omitted
+2025-08-13 12:50:00 [scheduling-1] INFO  o.s.batch.core.step.AbstractStep - Step: [exportFilmsStep] executed in 63ms
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.c.r.dao.JdbcStepExecutionDao - Truncating long message before update of StepExecution, original message is: org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:486)
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:199)
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:115)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:182)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; expected "identifier"; SQL statement:
+SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5533)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2801)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:463)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	... 46 more
+
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.step.AbstractStep - Step execution complete: StepExecution: id=1, version=2, name=exportFilmsStep, status=FAILED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Upgrading JobExecution status: StepExecution: id=1, version=2, name=exportFilmsStep, status=FAILED, exitStatus=FAILED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=0, rollbackCount=1, exitDescription=org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:486)
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:199)
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:115)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:182)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; expected "identifier"; SQL statement:
+SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5533)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2801)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:463)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	... 46 more
+
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Job execution complete: JobExecution: id=1, version=1, startTime=2025-08-13T12:50:00.086699, endTime=null, lastUpdated=2025-08-13T12:50:00.086699, status=FAILED, exitStatus=exitCode=FAILED;exitDescription=org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:486)
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:199)
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:115)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:182)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; expected "identifier"; SQL statement:
+SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5533)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2801)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:463)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	... 46 more
+, job=[JobInstance: id=1, version=0, Job=[exportFilmsJob]], jobParameters=[{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082200044, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:50:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmJobListener - Quedan sin migrar: 0
+2025-08-13 12:50:00 [scheduling-1] DEBUG o.s.b.c.r.dao.JdbcJobExecutionDao - Truncating long message before update of JobExecution: JobExecution: id=1, version=1, startTime=2025-08-13T12:50:00.086699, endTime=2025-08-13T12:50:00.171509300, lastUpdated=2025-08-13T12:50:00.172515400, status=FAILED, exitStatus=exitCode=FAILED;exitDescription=org.springframework.jdbc.BadSqlGrammarException: StatementCallback; bad SQL grammar [SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY]
+	at org.springframework.jdbc.support.SQLExceptionSubclassTranslator.doTranslate(SQLExceptionSubclassTranslator.java:103)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:107)
+	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1548)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:408)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:476)
+	at org.springframework.jdbc.core.JdbcTemplate.query(JdbcTemplate.java:486)
+	at org.springframework.batch.item.database.JdbcPagingItemReader.doReadPage(JdbcPagingItemReader.java:199)
+	at org.springframework.batch.item.database.AbstractPagingItemReader.doRead(AbstractPagingItemReader.java:115)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:93)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:182)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.lambda$provide$0(SimpleChunkProvider.java:132)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:127)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:388)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:312)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:255)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:82)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:369)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:206)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:140)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:240)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:229)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:153)
+	at org.springframework.batch.core.job.AbstractJob.handleStep(AbstractJob.java:418)
+	at org.springframework.batch.core.job.SimpleJob.doExecute(SimpleJob.java:132)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:317)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:157)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:50)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:148)
+	at org.springframework.batch.core.launch.support.TaskExecutorJobLauncher.run(TaskExecutorJobLauncher.java:59)
+	at com.FilmFeel.batch.BatchJobScheduler.launchJob(BatchJobScheduler.java:55)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.runInternal(ScheduledMethodRunnable.java:130)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.lambda$run$2(ScheduledMethodRunnable.java:124)
+	at io.micrometer.observation.Observation.observe(Observation.java:499)
+	at org.springframework.scheduling.support.ScheduledMethodRunnable.run(ScheduledMethodRunnable.java:124)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at org.springframework.scheduling.concurrent.ReschedulingRunnable.run(ReschedulingRunnable.java:96)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1570)
+Caused by: org.h2.jdbc.JdbcSQLSyntaxErrorException: Error de Sintaxis en sentencia SQL "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; se esperaba "identifier"
+Syntax error in SQL statement "SELECT film_id AS id, film_title AS title, film_year AS [*]year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY"; expected "identifier"; SQL statement:
+SELECT film_id AS id, film_title AS title, film_year AS year, film_duration AS duration, film_synopsis AS synopsis,  film_poster_route AS posterRoute FROM film WHERE migrate = FALSE ORDER BY film_id ASC FETCH NEXT 50 ROWS ONLY [42001-224]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:514)
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:489)
+	at org.h2.message.DbException.getSyntaxError(DbException.java:261)
+	at org.h2.command.Parser.readIdentifier(Parser.java:5533)
+	at org.h2.command.Parser.parseSelectExpressions(Parser.java:2801)
+	at org.h2.command.Parser.parseSelect(Parser.java:2817)
+	at org.h2.command.Parser.parseQueryPrimary(Parser.java:2708)
+	at org.h2.command.Parser.parseQueryTerm(Parser.java:2564)
+	at org.h2.command.Parser.parseQueryExpressionBody(Parser.java:2543)
+	at org.h2.command.Parser.parseQueryExpressionBodyAndEndOfQuery(Parser.java:2536)
+	at org.h2.command.Parser.parseQueryExpression(Parser.java:2529)
+	at org.h2.command.Parser.parseQuery(Parser.java:2498)
+	at org.h2.command.Parser.parsePrepared(Parser.java:627)
+	at org.h2.command.Parser.parse(Parser.java:592)
+	at org.h2.command.Parser.parse(Parser.java:564)
+	at org.h2.command.Parser.prepareCommand(Parser.java:483)
+	at org.h2.engine.SessionLocal.prepareLocal(SessionLocal.java:639)
+	at org.h2.engine.SessionLocal.prepareCommand(SessionLocal.java:559)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1166)
+	at org.h2.jdbc.JdbcStatement.executeQuery(JdbcStatement.java:94)
+	at com.zaxxer.hikari.pool.ProxyStatement.executeQuery(ProxyStatement.java:110)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.executeQuery(HikariProxyStatement.java)
+	at org.springframework.jdbc.core.JdbcTemplate$1QueryStatementCallback.doInStatement(JdbcTemplate.java:463)
+	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:393)
+	... 46 more
+, job=[JobInstance: id=1, version=0, Job=[exportFilmsJob]], jobParameters=[{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082200044, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:50:00 [scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exportFilmsJob]] completed with the following parameters: [{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082200044, type=class java.lang.Long, identifying=true}'}] and the following status: [FAILED] in 84ms
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:50:33 [SpringApplicationShutdownHook] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Unregistering job: exportFilmsJob
+2025-08-13 12:50:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:50:38 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 7020 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:50:38 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:50:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:50:38 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:50:39 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 4 ms.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 62 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:50:40 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:50:41 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:50:41 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:50:41 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:50:41 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:50:41 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:50:41 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:50:41 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3359 ms
+2025-08-13 12:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:50:42 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:50:42 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:50:42 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:50:42 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:50:42 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:50:43 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:50:43 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:50:43 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:50:44 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:50:44 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql]
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('USER')
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('ADMIN')
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO users ( user_username, user_password, user_active, user_name, user_surname, user_email ) SELECT 'admin', '$2a$12$3G7Lpe9nXRfKjktweeD/uulTJIgV3jOe9zA58NGKprLzqYp2w/okG', true, 'administrador', 'principal', 'administrador@filmfeel.com' WHERE NOT EXISTS (SELECT 1 FROM users WHERE user_username = 'admin')
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO user_roles (user_id, role_id) SELECT u.user_id, r.id FROM users u, roles r WHERE u.user_username = 'admin' AND r.name = 'ADMIN' AND NOT EXISTS ( SELECT 1 FROM user_roles WHERE user_id = u.user_id AND role_id = r.id )
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql] in 12 ms.
+2025-08-13 12:50:44 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:50:44 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:50:44 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: exportFilmsJob
+2025-08-13 12:50:45 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:50:45 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_INSTANCE ( JOB_INSTANCE_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_NAME VARCHAR(100) NOT NULL, JOB_KEY VARCHAR(32) NOT NULL, constraint JOB_INST_UN unique (JOB_NAME, JOB_KEY) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION ( JOB_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_INSTANCE_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_INST_EXEC_FK foreign key (JOB_INSTANCE_ID) references BATCH_JOB_INSTANCE(JOB_INSTANCE_ID) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_PARAMS ( JOB_EXECUTION_ID BIGINT NOT NULL , PARAMETER_NAME VARCHAR(100) NOT NULL , PARAMETER_TYPE VARCHAR(100) NOT NULL , PARAMETER_VALUE VARCHAR(2500) , IDENTIFYING CHAR(1) NOT NULL , constraint JOB_EXEC_PARAMS_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION ( STEP_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT NOT NULL, STEP_NAME VARCHAR(100) NOT NULL, JOB_EXECUTION_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , COMMIT_COUNT BIGINT , READ_COUNT BIGINT , FILTER_COUNT BIGINT , WRITE_COUNT BIGINT , READ_SKIP_COUNT BIGINT , WRITE_SKIP_COUNT BIGINT , PROCESS_SKIP_COUNT BIGINT , ROLLBACK_COUNT BIGINT , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_EXEC_STEP_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION_CONTEXT ( STEP_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint STEP_EXEC_CTX_FK foreign key (STEP_EXECUTION_ID) references BATCH_STEP_EXECUTION(STEP_EXECUTION_ID) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_CONTEXT ( JOB_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint JOB_EXEC_CTX_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_STEP_EXECUTION_SEQ
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_EXECUTION_SEQ
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_SEQ
+2025-08-13 12:50:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 10 ms.
+2025-08-13 12:50:46 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:50:46 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:50:47 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:50:47 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@193f9651, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@37dac2e7, org.springframework.security.web.context.SecurityContextHolderFilter@1cb43dfa, org.springframework.security.web.header.HeaderWriterFilter@49ce9e43, org.springframework.web.filter.CorsFilter@6d4629f5, org.springframework.security.web.authentication.logout.LogoutFilter@12d4afcf, com.FilmFeel.jwt.JwtValidator@4537ae81, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@55328591, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@45a222d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@20df2568, org.springframework.security.web.session.SessionManagementFilter@48783448, org.springframework.security.web.access.ExceptionTranslationFilter@6f068860, org.springframework.security.web.access.intercept.AuthorizationFilter@793827d1]
+2025-08-13 12:50:47 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1fcbf741, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14651558, org.springframework.security.web.context.SecurityContextHolderFilter@32a3e88f, org.springframework.security.web.header.HeaderWriterFilter@54b3ba85, org.springframework.web.filter.CorsFilter@ae4c172, org.springframework.security.web.csrf.CsrfFilter@75e473db, org.springframework.security.web.authentication.logout.LogoutFilter@6a3983fd, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1750057b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@77e69f41, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@e5d08d0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6675e55d, org.springframework.security.web.access.ExceptionTranslationFilter@21f6bb6, org.springframework.security.web.access.intercept.AuthorizationFilter@4f1b9318]
+2025-08-13 12:50:47 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:50:47 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:50:48 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:50:48 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:50:48 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:50:48 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 10.456 seconds (process running for 11.021)
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Shutting down ExecutorService 'taskScheduler'
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] WARN  o.s.b.f.s.DisposableBeanAdapter - Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: La base de datos ya esta cerrada (para des-habilitar el cerrado automatico durante el shutdown de la VM, agregue ";DB_CLOSE_ON_EXIT=FALSE" a la URL de conexión)
+Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-08-13 12:53:33 [SpringApplicationShutdownHook] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Unregistering job: exportFilmsJob
+2025-08-13 12:53:38 [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.1.Final
+2025-08-13 12:53:39 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Starting FilmFeelApplication using Java 22.0.1 with PID 21420 (C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes started by alena in C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master)
+2025-08-13 12:53:39 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - No active profile set, falling back to 1 default profile: "default"
+2025-08-13 12:53:39 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-13 12:53:39 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-13 12:53:40 [restartedMain] INFO  o.s.b.c.c.annotation.BatchRegistrar - Finished Spring Batch infrastructure beans configuration in 6 ms.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.FilmRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.MyUserRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.PersonRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ReviewRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.RoleRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport - Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.FilmFeel.repository.ScoreRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 61 ms. Found 0 JDBC repository interfaces.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-13 12:53:41 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 60 ms. Found 6 JPA repository interfaces.
+2025-08-13 12:53:42 [restartedMain] WARN  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'jobRegistry' of type [org.springframework.batch.core.configuration.support.MapJobRegistry] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [jobRegistryBeanPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-08-13 12:53:42 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8060 (http)
+2025-08-13 12:53:42 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:53:42 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-08-13 12:53:42 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.20]
+2025-08-13 12:53:42 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-08-13 12:53:42 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 3682 ms
+2025-08-13 12:53:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-08-13 12:53:43 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:myseguridad_db user=SA
+2025-08-13 12:53:43 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-08-13 12:53:43 [restartedMain] INFO  o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:myseguridad_db'
+2025-08-13 12:53:44 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-13 12:53:44 [restartedMain] INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-08-13 12:53:44 [restartedMain] INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2025-08-13 12:53:44 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-13 12:53:44 [restartedMain] WARN  org.hibernate.orm.deprecation - HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-13 12:53:45 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-13 12:53:45 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-13 12:53:45 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql]
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('USER')
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO roles (name) VALUES ('ADMIN')
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO users ( user_username, user_password, user_active, user_name, user_surname, user_email ) SELECT 'admin', '$2a$12$3G7Lpe9nXRfKjktweeD/uulTJIgV3jOe9zA58NGKprLzqYp2w/okG', true, 'administrador', 'principal', 'administrador@filmfeel.com' WHERE NOT EXISTS (SELECT 1 FROM users WHERE user_username = 'admin')
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 1 returned as update count for SQL: INSERT INTO user_roles (user_id, role_id) SELECT u.user_id, r.id FROM users u, roles r WHERE u.user_username = 'admin' AND r.name = 'ADMIN' AND NOT EXISTS ( SELECT 1 FROM user_roles WHERE user_id = u.user_id AND role_id = r.id )
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from file [C:\Users\alena\IdealProjects\REPOSITORIOS GIT\GITHUB_APLICACIONWEB_FILMFEEL_ABRIL_2025\testfilmfeel-master\FilmFeel\target\classes\data.sql] in 21 ms.
+2025-08-13 12:53:46 [restartedMain] INFO  o.s.b.c.r.s.JobRepositoryFactoryBean - No database type set, using meta data indicating: H2
+2025-08-13 12:53:46 [restartedMain] INFO  o.s.b.c.l.support.SimpleJobLauncher - No TaskExecutor has been set, defaulting to synchronous executor.
+2025-08-13 12:53:46 [restartedMain] DEBUG o.s.b.c.c.s.JobRegistryBeanPostProcessor - Registering job: exportFilmsJob
+2025-08-13 12:53:47 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - JSqlParser is in classpath; If applicable, JSqlParser will be used
+2025-08-13 12:53:47 [restartedMain] INFO  o.s.d.j.r.query.QueryEnhancerFactory - Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executing SQL script from class path resource [org/springframework/batch/core/schema-h2.sql]
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_INSTANCE ( JOB_INSTANCE_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_NAME VARCHAR(100) NOT NULL, JOB_KEY VARCHAR(32) NOT NULL, constraint JOB_INST_UN unique (JOB_NAME, JOB_KEY) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION ( JOB_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT , JOB_INSTANCE_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_INST_EXEC_FK foreign key (JOB_INSTANCE_ID) references BATCH_JOB_INSTANCE(JOB_INSTANCE_ID) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_PARAMS ( JOB_EXECUTION_ID BIGINT NOT NULL , PARAMETER_NAME VARCHAR(100) NOT NULL , PARAMETER_TYPE VARCHAR(100) NOT NULL , PARAMETER_VALUE VARCHAR(2500) , IDENTIFYING CHAR(1) NOT NULL , constraint JOB_EXEC_PARAMS_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION ( STEP_EXECUTION_ID BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY , VERSION BIGINT NOT NULL, STEP_NAME VARCHAR(100) NOT NULL, JOB_EXECUTION_ID BIGINT NOT NULL, CREATE_TIME TIMESTAMP(9) NOT NULL, START_TIME TIMESTAMP(9) DEFAULT NULL , END_TIME TIMESTAMP(9) DEFAULT NULL , STATUS VARCHAR(10) , COMMIT_COUNT BIGINT , READ_COUNT BIGINT , FILTER_COUNT BIGINT , WRITE_COUNT BIGINT , READ_SKIP_COUNT BIGINT , WRITE_SKIP_COUNT BIGINT , PROCESS_SKIP_COUNT BIGINT , ROLLBACK_COUNT BIGINT , EXIT_CODE VARCHAR(2500) , EXIT_MESSAGE VARCHAR(2500) , LAST_UPDATED TIMESTAMP(9), constraint JOB_EXEC_STEP_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_STEP_EXECUTION_CONTEXT ( STEP_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint STEP_EXEC_CTX_FK foreign key (STEP_EXECUTION_ID) references BATCH_STEP_EXECUTION(STEP_EXECUTION_ID) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE TABLE BATCH_JOB_EXECUTION_CONTEXT ( JOB_EXECUTION_ID BIGINT NOT NULL PRIMARY KEY, SHORT_CONTEXT VARCHAR(2500) NOT NULL, SERIALIZED_CONTEXT LONGVARCHAR , constraint JOB_EXEC_CTX_FK foreign key (JOB_EXECUTION_ID) references BATCH_JOB_EXECUTION(JOB_EXECUTION_ID) ) 
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_STEP_EXECUTION_SEQ
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_EXECUTION_SEQ
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - 0 returned as update count for SQL: CREATE SEQUENCE BATCH_JOB_SEQ
+2025-08-13 12:53:49 [restartedMain] DEBUG o.s.jdbc.datasource.init.ScriptUtils - Executed SQL script from class path resource [org/springframework/batch/core/schema-h2.sql] in 28 ms.
+2025-08-13 12:53:49 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-13 12:53:49 [restartedMain] INFO  o.s.b.a.w.s.WelcomePageHandlerMapping - Adding welcome page template: index
+2025-08-13 12:53:50 [restartedMain] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint(s) beneath base path '/actuator'
+2025-08-13 12:53:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure Or [Mvc [pattern='/auth/**'], Mvc [pattern='/api/**']] with [org.springframework.security.web.session.DisableEncodeUrlFilter@6ef9abd2, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@41e8b02, org.springframework.security.web.context.SecurityContextHolderFilter@21ef105b, org.springframework.security.web.header.HeaderWriterFilter@63c6cc87, org.springframework.web.filter.CorsFilter@3979495, org.springframework.security.web.authentication.logout.LogoutFilter@7d624b18, com.FilmFeel.jwt.JwtValidator@64af3033, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@309c262c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d18500e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@472bb04f, org.springframework.security.web.session.SessionManagementFilter@42c7906a, org.springframework.security.web.access.ExceptionTranslationFilter@2df93284, org.springframework.security.web.access.intercept.AuthorizationFilter@673c21]
+2025-08-13 12:53:50 [restartedMain] INFO  o.s.s.web.DefaultSecurityFilterChain - Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ec2325b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ac3c3b5, org.springframework.security.web.context.SecurityContextHolderFilter@2874644, org.springframework.security.web.header.HeaderWriterFilter@19f4dce3, org.springframework.web.filter.CorsFilter@75fad396, org.springframework.security.web.csrf.CsrfFilter@6511bbf, org.springframework.security.web.authentication.logout.LogoutFilter@7a397dc3, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@49210ea9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5f46a0b3, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7d186e33, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@35235ff, org.springframework.security.web.access.ExceptionTranslationFilter@1776b151, org.springframework.security.web.access.intercept.AuthorizationFilter@2e4794c8]
+2025-08-13 12:53:51 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+2025-08-13 12:53:51 [restartedMain] DEBUG o.s.s.c.ThreadPoolTaskScheduler - Initializing ExecutorService 'taskScheduler'
+2025-08-13 12:53:52 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-08-13 12:53:52 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8060"]
+2025-08-13 12:53:52 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8060 (http) with context path ''
+2025-08-13 12:53:52 [restartedMain] INFO  com.FilmFeel.FilmFeelApplication - Started FilmFeelApplication in 14.516 seconds (process running for 15.098)
+2025-08-13 12:54:22 [http-nio-8060-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-13 12:54:22 [http-nio-8060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-08-13 12:54:22 [http-nio-8060-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 5 ms
+2025-08-13 12:54:22 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Accediendo a la página de inicio
+2025-08-13 12:54:22 [http-nio-8060-exec-1] INFO  c.FilmFeel.controller.HomeController - Se cargaron las últimas 0 películas para la página de inicio
+2025-08-13 12:54:23 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template home_index, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:23 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template home_index, line 23, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:23 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template home_index, line 92, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:23 [http-nio-8060-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-1][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template home_index, line 108, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:25 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][register-form] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template register-form, line 6, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:25 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][register-form] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template register-form, line 109, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:25 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][register-form] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template register-form, line 133, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:46 [http-nio-8060-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-5][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template login-form, line 13, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:46 [http-nio-8060-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-5][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template login-form, line 22, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:46 [http-nio-8060-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-5][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template login-form, line 59, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:46 [http-nio-8060-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-5][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template login-form, line 82, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:51 [http-nio-8060-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-8][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template login-form, line 13, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:51 [http-nio-8060-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-8][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template login-form, line 22, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:51 [http-nio-8060-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-8][login-form] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template login-form, line 59, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:51 [http-nio-8060-exec-8] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-8][login-form] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template login-form, line 82, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.HomeController - Accediendo a la página de inicio
+2025-08-13 12:54:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.HomeController - Se cargaron las últimas 0 películas para la página de inicio
+2025-08-13 12:54:57 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template home_index, line 8, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:57 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template home_index, line 23, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:57 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][home_index] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template home_index, line 92, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:57 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][home_index] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template home_index, line 108, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:57 [http-nio-8060-exec-9] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:54:59 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template new-film, line 9, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:59 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template new-film, line 15, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:59 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template new-film, line 125, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:59 [http-nio-8060-exec-3] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-3][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template new-film, line 148, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:54:59 [http-nio-8060-exec-6] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:55:00 [scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exportFilmsJob]] launched with the following parameters: [{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082500025, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Job execution starting: JobExecution: id=1, version=0, startTime=null, endTime=null, lastUpdated=2025-08-13T12:55:00.078135900, status=STARTING, exitStatus=exitCode=UNKNOWN;exitDescription=, job=[JobInstance: id=1, version=0, Job=[exportFilmsJob]], jobParameters=[{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082500025, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:55:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmJobListener -  Pendientes de migrar: 0
+2025-08-13 12:55:00 [scheduling-1] INFO  o.s.batch.core.job.SimpleStepHandler - Executing step: [exportFilmsStep]
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.step.AbstractStep - Executing: id=1
+2025-08-13 12:55:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmStepListener -  Iniciando Step “exportFilmsStep”
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.scope.StepScope - Creating object in scope=step, name=scopedTarget.fileWriter
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.scope.StepScope - Registered destruction callback in scope=step, name=scopedTarget.fileWriter
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Preparing chunk execution for StepContext: org.springframework.batch.core.scope.context.StepContext@6d784fea
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.b.c.s.c.StepContextRepeatCallback - Chunk execution starting: queue size=0
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.b.c.s.item.ChunkOrientedTasklet - Inputs not busy, ended: true
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.b.core.step.tasklet.TaskletStep - Applying contribution: [StepContribution: read=0, written=0, filtered=0, readSkips=0, writeSkips=0, processSkips=0, exitStatus=EXECUTING]
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.b.core.step.tasklet.TaskletStep - Saving step execution before commit: StepExecution: id=1, version=1, name=exportFilmsStep, status=STARTED, exitStatus=EXECUTING, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.step.AbstractStep - Step execution success: id=1
+2025-08-13 12:55:00 [scheduling-1] INFO  o.s.batch.core.step.AbstractStep - Step: [exportFilmsStep] executed in 93ms
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.step.AbstractStep - Step execution complete: StepExecution: id=1, version=3, name=exportFilmsStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Upgrading JobExecution status: StepExecution: id=1, version=3, name=exportFilmsStep, status=COMPLETED, exitStatus=COMPLETED, readCount=0, filterCount=0, writeCount=0 readSkipCount=0, writeSkipCount=0, processSkipCount=0, commitCount=1, rollbackCount=0, exitDescription=
+2025-08-13 12:55:00 [scheduling-1] DEBUG o.s.batch.core.job.AbstractJob - Job execution complete: JobExecution: id=1, version=1, startTime=2025-08-13T12:55:00.123195, endTime=null, lastUpdated=2025-08-13T12:55:00.124194900, status=COMPLETED, exitStatus=exitCode=COMPLETED;exitDescription=, job=[JobInstance: id=1, version=0, Job=[exportFilmsJob]], jobParameters=[{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082500025, type=class java.lang.Long, identifying=true}'}]
+2025-08-13 12:55:00 [scheduling-1] INFO  com.FilmFeel.batch.FilmJobListener - Quedan sin migrar: 0
+2025-08-13 12:55:00 [scheduling-1] INFO  o.s.b.c.l.support.SimpleJobLauncher - Job: [SimpleJob: [name=exportFilmsJob]] completed with the following parameters: [{'outputFile':'{value=output/2025-08-13_films.csv, type=class java.lang.String, identifying=true}','timestamp':'{value=1755082500025, type=class java.lang.Long, identifying=true}'}] and the following status: [COMPLETED] in 135ms
+2025-08-13 12:55:13 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][films] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template films, line 7, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:13 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][films] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template films, line 18, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:13 [http-nio-8060-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-7][films] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template films, line 151, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:13 [http-nio-8060-exec-5] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:55:13 [http-nio-8060-exec-8] INFO  c.F.controller.AssetController - Solicitud de recurso: BEAUTIFULBOY.jpg
+2025-08-13 12:55:15 [http-nio-8060-exec-9] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-9][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template new-film, line 9, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:15 [http-nio-8060-exec-9] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-9][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template new-film, line 15, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:15 [http-nio-8060-exec-9] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-9][new-film] Deprecated unwrapped fragment expression "fragments/_resources :: _foot_resources" found in template new-film, line 125, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _foot_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:15 [http-nio-8060-exec-9] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-9][new-film] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template new-film, line 148, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:15 [http-nio-8060-exec-7] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:55:29 [http-nio-8060-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-2][films] Deprecated unwrapped fragment expression "fragments/_resources :: _head_resources" found in template films, line 7, col 10. Please use the complete syntax of fragment expressions instead ("~{fragments/_resources :: _head_resources}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:29 [http-nio-8060-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-2][films] Deprecated unwrapped fragment expression "fragments/_fragments :: nav_bar" found in template films, line 18, col 6. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: nav_bar}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:29 [http-nio-8060-exec-2] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8060-exec-2][films] Deprecated unwrapped fragment expression "fragments/_fragments :: _footer" found in template films, line 151, col 9. Please use the complete syntax of fragment expressions instead ("~{fragments/_fragments :: _footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-08-13 12:55:29 [http-nio-8060-exec-9] INFO  c.F.controller.AssetController - Solicitud de recurso: chalamet.jpg
+2025-08-13 12:55:29 [http-nio-8060-exec-4] INFO  c.F.controller.AssetController - Solicitud de recurso: BEAUTIFULBOY.jpg
+2025-08-13 12:55:29 [http-nio-8060-exec-8] INFO  c.F.controller.AssetController - Solicitud de recurso: dune__.jpg
