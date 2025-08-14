@@ -7,5 +7,5 @@ RUN mvn -DskipTests -f testfilmfeel-master/FilmFeel/pom.xml clean package
 # Etapa 2: ejecutar el .jar
 FROM openjdk:17-jdk-slim
 WORKDIR /app
-COPY --from=build /app/testfilmfeel-master/FilmFeel/target/*.jar app.jar
+COPY --from=build /app/target/*.jar app.jar
 ENTRYPOINT ["java", "-jar", "app.jar"]
