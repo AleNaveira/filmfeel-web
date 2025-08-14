@@ -87,6 +87,8 @@
     <div class="form-group">
         <label for="email" class="form-label">Email:</label>
         <input type="email" id="email" th:field="*{email}" class="form-control" required/>
+        <div th:if="${#fields.hasErrors('email')}" class="text-danger" th:errors="*{email}"></div>
+
     </div>
     <div class="form-group">
         <label for="birthDate" class="form-label">Fecha de Nacimiento:</label>
