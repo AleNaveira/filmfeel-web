@@ -1,0 +1,5 @@
+**/target/         export-ignore
+**/logs/           export-ignore
+*.log              export-ignore
+*.mv.db            export-ignore
+*.trace.db         export-ignore
