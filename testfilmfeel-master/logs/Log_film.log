@@ -1,0 +1,25 @@
+2025-08-13 12:36:28 [http-nio-8060-exec-10] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : beautiful boy
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 12:36:43 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Se encontraron 1 películas
+2025-08-13 12:54:59 [http-nio-8060-exec-3] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 12:55:13 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : beautiful boy
+2025-08-13 12:55:13 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 12:55:13 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 12:55:13 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Se encontraron 1 películas
+2025-08-13 12:55:15 [http-nio-8060-exec-9] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 12:55:29 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : dune
+2025-08-13 12:55:29 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 12:55:29 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 12:55:29 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Se encontraron 2 películas
+2025-08-13 13:10:20 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 13:10:39 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : submarine
+2025-08-13 13:10:39 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 13:10:39 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 13:10:39 [http-nio-8060-exec-2] INFO  c.FilmFeel.controller.FilmController - Se encontraron 1 películas
+2025-08-13 13:10:41 [http-nio-8060-exec-4] INFO  c.FilmFeel.controller.FilmController - Accediendo al formulario de nueva película
+2025-08-13 13:10:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Intentando crear nueva película : dune
+2025-08-13 13:10:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Película creada exitosamente
+2025-08-13 13:10:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Accediendo al listado de películas
+2025-08-13 13:10:57 [http-nio-8060-exec-7] INFO  c.FilmFeel.controller.FilmController - Se encontraron 2 películas
