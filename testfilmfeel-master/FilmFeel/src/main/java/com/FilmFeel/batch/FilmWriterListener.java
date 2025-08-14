@@ -28,7 +28,7 @@ public class FilmWriterListener implements ItemWriteListener<FilmDTO> {
 
     @Override
     public void afterWrite(Chunk<? extends FilmDTO> items) {
-        // obtenemos la lista real con .getItems()
+
         List<Long> ids = items.getItems().stream()
                 .map(FilmDTO::getId)
                 .collect(Collectors.toList());

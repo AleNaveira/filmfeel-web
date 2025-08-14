@@ -35,10 +35,9 @@ public class BatchJobScheduler {
 
 
 
-    @Scheduled(cron = "0 0 2 * * *", zone = "Europe/Madrid")
+    @Scheduled(cron = "0 */5 * * * *", zone = "Europe/Madrid")
     public void launchJob() throws Exception {
-        System.out.println("Intentando lanzar el batch...");
-        // 👇 DATO CLAVE: lo que la APP ve AHORA MISMO
+
         Integer pending = jdbc.queryForObject(
                 "SELECT COUNT(*) FROM film WHERE migrate = FALSE", Integer.class);
         System.out.println("🔎 Pendientes justo antes del job (APP): " + pending);
@@ -50,33 +49,18 @@ public class BatchJobScheduler {
                 .addString("outputFile", fileName)
                 .addLong("timestamp", System.currentTimeMillis())
                 .toJobParameters();
-        System.out.println("Params generados: " + params);
+
 
 try {
     var execution = jobLauncher.run(filmMigrationJob, params);
-    // 🔍 Depuración: mostrar estado
-    System.out.println("Estado inicial del job: " + execution.getStatus());
-    execution.getStepExecutions().forEach(stepExec ->
-            System.out.println("Step: " + stepExec.getStepName() +
-                    " | ReadCount=" + stepExec.getReadCount() +
-                    " | WriteCount=" + stepExec.getWriteCount())
-    );
 
-    System.out.println("Estado del job: " + execution.getStatus());
-    execution.getStepExecutions().forEach(se -> System.out.println(
-            "Step " + se.getStepName() +
-                    " read=" + se.getReadCount() +
-                    " write=" + se.getWriteCount() +
-                    " status=" + se.getStatus()
-    ));
 
-    // 👇 imprime cualquier excepción del job o del step (mapper, writer, etc.)
     if (!execution.getAllFailureExceptions().isEmpty()) {
-        System.out.println("❌ Excepciones del job:");
+        System.out.println(" Excepciones del job:");
         execution.getAllFailureExceptions().forEach(Throwable::printStackTrace);
     }
 }catch (Exception e){
-    System.out.println("❌ Falló el run del job:");
+    System.out.println("Falló el run del job:");
     e.printStackTrace();
 }
     }
