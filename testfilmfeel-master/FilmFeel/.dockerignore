@@ -1,0 +1,12 @@
+.git/
+target/
+**/target/
+.idea/
+*.mv.db
+*.trace.db
+**/output/
+FilmFeel/data/
+testfilmfeel-master/FilmFeel/data/
+testfilmfeel-master/FilmFeel/output/
+logs/
+**/*.log
