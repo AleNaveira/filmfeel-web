@@ -58,6 +58,8 @@ public class AuthController {
 
         logger.info("Intentando registrar usuario : {}", userForm.getUsername());
 
+
+
         if (bindingResult.hasErrors() || userForm.getPortada().isEmpty()) {
 
             if (userForm.getPortada().isEmpty()) {
@@ -90,7 +92,20 @@ try {
     return new ModelAndView("register-form").addObject("userForm", userForm);
 
 }catch(DataIntegrityViolationException e){
-    bindingResult.rejectValue("email", "duplicate", "Este email ya está registrado");
+
+    String errorMessage = e.getMostSpecificCause().getMessage();
+
+    if(errorMessage.contains("username")){
+        bindingResult.rejectValue("username", "duplicate", "Este nomre de usuario ya está en uso");
+
+    } else if (errorMessage.contains("email")){
+        bindingResult.rejectValue("email", "duplicate", "Este email ya está registrado");
+    } else {
+        bindingResult.reject("duplicate", "Ya existe un usuario con los mismos datos :(");
+    }
+
+
+
     return new ModelAndView("register-form").addObject("userForm",userForm);
 
 }
