@@ -6,6 +6,9 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.web.multipart.MultipartFile;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -30,7 +33,8 @@ public class UserEntity {
     private String name;
     @Column(name = "user_surname")
     private String surname;
-    @Column(name = "user_email", unique = true)
+    @Column(name = "user_email", nullable=false, unique = true, length=254)
+    @NotBlank
     private String email;
     @Column(name = "user_image")
     private String image;
@@ -46,6 +50,15 @@ public class UserEntity {
 
     @Transient
     MultipartFile portada;
+
+
+    public void setEmail(String email){
+        this.email=(email==null) ? null : email.trim().toLowerCase();
+    }
+    @PrePersist @PreUpdate
+    public void normalize(){
+        if (email !=null) email = email.trim().toLowerCase();
+    }
 
 
     @ManyToMany(fetch = FetchType.EAGER)

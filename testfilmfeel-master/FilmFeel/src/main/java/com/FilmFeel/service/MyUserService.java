@@ -1,6 +1,7 @@
 package com.FilmFeel.service;
 
 
+import com.FilmFeel.exception.EmailAlreadyUsedException;
 import com.FilmFeel.model.UserEntity;
 import com.FilmFeel.repository.MyUserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +17,17 @@ public class MyUserService {
     private MyUserRepository myUserRepository;
 
     public void saveUser(UserEntity user) {
-        myUserRepository.save(user);
+        if (user.getEmail() == null || user.getEmail().isBlank()) {
+            throw new IllegalArgumentException("El email es obligatorio");
+        }
+        // setEmail ya normaliza a minúsculas; asegúrate de llamarlo si hiciese falta
+        user.setEmail(user.getEmail());
 
+        if (myUserRepository.existsByEmailIgnoreCase(user.getEmail())) {
+            throw new EmailAlreadyUsedException(user.getEmail());
+        }
+
+        myUserRepository.save(user);
     }
 
     public UserEntity findByUsername(String username) {

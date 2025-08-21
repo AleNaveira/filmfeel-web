@@ -1,5 +1,6 @@
 package com.FilmFeel.controller;
 
+import com.FilmFeel.exception.EmailAlreadyUsedException;
 import com.FilmFeel.model.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -7,6 +8,7 @@ import com.FilmFeel.repository.RoleRepository;
 import com.FilmFeel.service.MyUserService;
 import com.FilmFeel.service.StorageServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -74,13 +76,24 @@ public class AuthController {
         logger.info("Imagen subida correctamente");
 
         Role userRole = roleRepository.findByName("USER").orElse(new Role(null, "USER"));
+try {
+    userForm.setPassword(passwordEncoder.encode(userForm.getPassword()));
+    userForm.setActive(true);
+    userForm.setCreationDate(LocalDate.now());
+    userForm.getRoles().add(userRole);
 
-        userForm.setPassword(passwordEncoder.encode(userForm.getPassword()));
-        userForm.setActive(true);
-        userForm.setCreationDate(LocalDate.now());
 
-        userForm.getRoles().add(userRole);
-        userService.saveUser(userForm);
+    userService.saveUser(userForm);
+
+}catch(EmailAlreadyUsedException e){
+    bindingResult.rejectValue("email", "duplicate","Este email está ya registrado");
+    return new ModelAndView("register-form").addObject("userForm", userForm);
+
+}catch(DataIntegrityViolationException e){
+    bindingResult.rejectValue("email", "duplicate", "Este email ya está registrado");
+    return new ModelAndView("register-form").addObject("userForm",userForm);
+
+}
 
         logger.info("Usuario registrado exitosamente : {}", userForm.getUsername());
         return new ModelAndView("redirect:/login");
