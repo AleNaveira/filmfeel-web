@@ -1,5 +1,6 @@
 package com.FilmFeel.controller;
 
+import com.FilmFeel.service.ScoreService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.FilmFeel.model.CustomUserDetails;
@@ -12,6 +13,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.util.Collections;
 import java.util.List;
@@ -27,10 +29,13 @@ public class ScoreController {
     private ScoreRepository scoreRepository;
 
     @Autowired
+    private ScoreService scoreService;
+
+    @Autowired
     private FilmRepository filmRepository;
 
     @PostMapping("/submit/{filmId}")
-    public ModelAndView submitScore(@PathVariable Long filmId, @RequestParam Integer scoreValue, @AuthenticationPrincipal CustomUserDetails currentUser) {
+    public ModelAndView submitScore(@PathVariable Long filmId, @RequestParam Integer scoreValue, @AuthenticationPrincipal CustomUserDetails currentUser, RedirectAttributes redirectAttributes) {
         logger.info("Intentando enviar puntuación para la película con ID:{}", filmId);
         Film film = filmRepository.findById(filmId).orElse(null);
         if (film != null && scoreValue >= 1 && scoreValue <= 5) {
@@ -41,8 +46,13 @@ public class ScoreController {
             if (currentUser != null) {
                 score.setUserEntity(currentUser.getUser());
             }
-            scoreRepository.save(score);
-            logger.info("Puntuación guardada correctamente para la película con ID:{}", filmId);
+            try {
+                scoreService.saveScore(score);
+                logger.info("Puntuación guardada correctamente para la película con ID:{}", filmId);
+            }catch(IllegalArgumentException e){
+                logger.warn("Ya existe una puntuación para esta película con este usuario");
+                redirectAttributes.addFlashAttribute("errorScore", e.getMessage());
+            }
 
         }else{
             logger.warn("No se pudo guardar la puntuación");

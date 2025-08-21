@@ -56,7 +56,7 @@ public class ReviewController {
 
             }catch(IllegalArgumentException e){
                 logger.warn("Ya existe una crítica para esta película de este usuario");
-                redirectAttributes.addFlashAttribute("error", e.getMessage());
+                redirectAttributes.addFlashAttribute("errorReview", e.getMessage());
             }
 
         }else{
