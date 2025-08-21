@@ -2,6 +2,7 @@ package com.FilmFeel.repository;
 
 import com.FilmFeel.model.Film;
 import com.FilmFeel.model.Review;
+import com.FilmFeel.model.UserEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -18,6 +19,7 @@ public interface ReviewRepository extends JpaRepository<Review, Long> {
     List<Review> findByFilmId(Long filmId);
 
     Optional<Review> findByUserEntityIdAndFilmId(Long userId, Long filmId);
+    Optional <Review> findByUserEntityAndFilm(UserEntity userEntity, Film film);
 
     void deleteByFilm(Film film);
 

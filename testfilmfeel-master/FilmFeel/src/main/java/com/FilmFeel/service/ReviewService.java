@@ -20,6 +20,11 @@ public class ReviewService {
 
 
     public Review saveReview(Review review, UserEntity user, Film film) {
+
+        Optional <Review> existingReview= reviewRepository.findByUserEntityAndFilm(user,film);
+        if(existingReview.isPresent()){
+            throw new IllegalArgumentException("Ya has escrito una review para esta película :(");
+        }
         review.setUserEntity(user);
         review.setFilm(film);
         review.setReviewDate(LocalDate.now());

@@ -13,6 +13,10 @@ import java.time.LocalDate;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
+@Table(name="review", uniqueConstraints = { @UniqueConstraint (columnNames = {"user_id", "film_id"})
+        }
+)
+
 public class Review {
 
     @Id

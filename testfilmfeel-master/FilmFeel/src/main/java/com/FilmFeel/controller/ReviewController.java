@@ -1,5 +1,6 @@
 package com.FilmFeel.controller;
 
+import com.FilmFeel.service.ReviewService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import com.FilmFeel.model.CustomUserDetails;
@@ -14,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -25,21 +27,38 @@ public class ReviewController {
     private static final Logger logger = LoggerFactory.getLogger(ReviewController.class);
 
     @Autowired
-    private ReviewRepository reviewRepository;
+    private ReviewRepository
+
+            reviewRepository;
+
+
 
     @Autowired
     private FilmRepository filmRepository;
 
+    @Autowired
+    private ReviewService reviewService;
+
     @PostMapping("/submit/{filmId}")
-    public ModelAndView submitReview(@PathVariable Long filmId, @ModelAttribute Review review, BindingResult bindingResult, @ModelAttribute("user") CustomUserDetails currentUser) {
+    public ModelAndView submitReview(@PathVariable Long filmId, @ModelAttribute Review review, BindingResult bindingResult, @ModelAttribute("user") CustomUserDetails currentUser, RedirectAttributes redirectAttributes) {
         logger.info("Intentando enviar una critica para la película con ID:{}", filmId);
         Film film = filmRepository.findById(filmId).orElse(null);
         if (film != null && currentUser != null) {
+            UserEntity userE = currentUser.getUser();
             review.setFilm(film);
             review.setUserEntity(currentUser.getUser());
             review.setReviewDate(LocalDate.now());
-            reviewRepository.save(review);
-            logger.info("Crítica guardada correctamente para la película con ID: {}", filmId);
+
+            try {
+
+                reviewService.saveReview(review, userE, film);
+                logger.info("crítica guardada correctamente");
+
+            }catch(IllegalArgumentException e){
+                logger.warn("Ya existe una crítica para esta película de este usuario");
+                redirectAttributes.addFlashAttribute("error", e.getMessage());
+            }
+
         }else{
             logger.warn("No se pudo enviar la critica.");
         }
