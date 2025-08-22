@@ -26,7 +26,7 @@ public class Film {
     private Integer year;
     @Column(name = "film_duration")
     private Integer duration;
-    @Column(name = "film_synopsis")
+    @Column(name = "film_synopsis", length = 2000)
     private String synopsis;
     @Column(name = "film_posterRoute")
     private String posterRoute;

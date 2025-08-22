@@ -99,7 +99,7 @@
         </td>
         <td class="film-year-films" th:text="*{year}"></td>
         <td>
-            <div class="actions">
+            <div class="actions flex-shrink-0" >
                 <a th:href="@{/peliculas/{id}(id=*{id})}" class="btn btn-success custom-btn mb-2">Detalles</a>
                 <a th:href="@{/peliculas/{id}/editar(id=*{id})}" class="btn btn-warning custom-btn mb-2">Editar</a>
                 <a href="javascript:void(0)" class="btn btn-danger custom-btn mb-2"

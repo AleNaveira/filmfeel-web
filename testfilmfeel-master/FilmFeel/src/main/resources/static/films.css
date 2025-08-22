@@ -10,7 +10,7 @@
 
 .film-synopsis {
     font-size: 1.2em;
-    color: #000000; /* Corregido: había dos propiedades 'color' seguidas */
+    color: #000000; /* Corregido: habï¿½a dos propiedades 'color' seguidas */
 }
 
 .films-table .custom-btn {
@@ -110,7 +110,10 @@
     color: white;
 }
 
-/* ? Estilos responsive para móviles */
+
+
+
+/* ? Estilos responsive para mï¿½viles */
 @media (max-width: 768px) {
     .film-title {
         font-size: 1.3em;
@@ -156,4 +159,25 @@
     .films-table .actions {
         text-align: center;
     }
+
+
 }
+
+
+
+
+
+
+
+/* Evitar que la columna de Acciones se encoja con sinopsis largas */
+.films-table th#header-actions,
+.films-table td:nth-child(4) {
+  width: 180px;      /* ajusta el nÃºmero si quieres un poco mÃ¡s/menos */
+  min-width: 180px;
+}
+
+/* Que los botones ocupen todo el ancho disponible de esa columna (opcional pero deja todo uniforme) */
+.films-table .actions .custom-btn {
+  width: 100%;
+}
+
