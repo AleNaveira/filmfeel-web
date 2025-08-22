@@ -64,7 +64,7 @@
 
         <div class="mb-3">
             <label for="portada" class="form-label">Portada</label>
-            <input id="portada" name="portada" type="file" class="form-control">
+            <input id="portada" name="portada" type="file" class="form-control" required/>
 
             <div class="invalid-feedback"
                  th:if="${#fields.hasErrors('portada')}"
