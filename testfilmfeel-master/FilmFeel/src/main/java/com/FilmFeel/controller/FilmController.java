@@ -25,6 +25,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
 
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -233,7 +234,7 @@ public class FilmController {
 
     }
 
-
+    @Transactional
     @PostMapping("/{id}/editar")
     ModelAndView updateFilm(@PathVariable Long id, @Validated Film film
             , BindingResult bindingResult) {
@@ -256,7 +257,6 @@ public class FilmController {
         peliculaFromDb.setDuration(film.getDuration());
         peliculaFromDb.setSynopsis(film.getSynopsis());
 
-
         if (!film.getPortada().isEmpty()) {
             storageService.delete(peliculaFromDb.getPosterRoute());
             String posterRoute = storageService.storage(film.getPortada());
@@ -265,6 +265,25 @@ public class FilmController {
 
 
         }
+
+
+        // --- Actualizar relaciones de PERSONAS (añadir/quitarlas) ---
+// Si el formulario manda null en alguna lista, usamos lista vacía para evitar NPE.
+        // --- Actualizar relaciones de PERSONAS (añadir/quitarlas) ---
+        peliculaFromDb.setActors(
+                film.getActors() == null ? Collections.<Person>emptyList() : film.getActors()
+        );
+        peliculaFromDb.setDirectors(film.getDirectors());
+        peliculaFromDb.setScriptwriters(
+                film.getScriptwriters() == null ? Collections.<Person>emptyList() : film.getScriptwriters()
+        );
+        peliculaFromDb.setPhotographer(film.getPhotographer());
+
+        peliculaFromDb.setFilmsMusicians(
+                film.getFilmsMusicians() == null ? Collections.<Person>emptyList() : film.getFilmsMusicians()
+        );
+
+
 
         filmRepository.save(peliculaFromDb);
         logger.info("Película actualizada con éxito");
