@@ -27,7 +27,18 @@
 
         <div class="col-lg-6 col-md-8 col-sm-10 text-center text-md-start">
             <div class="user-details">
-                <h2 class="display-5 user-name" th:text="${user.name + ' ' + user.surname} + ' (Administrador)'"></h2>
+
+
+                <h2 class="display-5 user-name">
+                    <span th:text="${user.name + ' ' + user.surname}"></span>
+                    <!-- Muestra (Administrador) si el usuario mostrado tiene el rol ADMIN -->
+                    <span th:if="${#lists.contains(user.roles.![name], 'ADMIN')}">(Administrador)</span>
+                </h2>
+
+
+
+
+
                 <p><strong>Nombre de Usuario:</strong> <span th:text="${user.username}"></span></p>
                 <p><strong>Email:</strong> <span th:text="${user.email}"></span></p>
                 <p><strong>Fecha de Nacimiento:</strong> <span
